@@ -8,7 +8,14 @@ import { Exit10Carousel } from '../Exit10Carousel/Exit10Carousel'
 function Exit10() {
 
 
+    useEffect(() => {
 
+
+        window.scrollTo(0, 0)
+
+
+
+    }, [])
 
     return (
         <>

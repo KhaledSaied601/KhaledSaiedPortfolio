@@ -9,6 +9,17 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function NavisworksAddin() {
 
+
+    useEffect(() => {
+
+
+        window.scrollTo(0, 0)
+
+
+
+    }, [])
+
+
     return (
         <>
             <div className='max-w-screen-md lg:max-w-screen-xl mx-auto '>

@@ -134,7 +134,7 @@ export function SideBar() {
                                         <PresentationChartBarIcon className="h-5 w-5 " />
 
                                     </ListItemPrefix>
-                                    <Link href='/KhaledSaiedPortfolio'>
+                                    <Link to='/KhaledSaiedPortfolio'>
                                         Dashboard
                                     </Link>
                                 </ListItem>

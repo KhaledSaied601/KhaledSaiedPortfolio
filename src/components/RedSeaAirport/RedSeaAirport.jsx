@@ -7,13 +7,23 @@ import RSI from '../../assets/images/airport/airportHead.webp'
 
 import CT from '../../assets/images/airport/Clash/Test.webp'
 import CR from '../../assets/images/airport/Clash/Report.webp'
-import {AirportFamiliesCarousel} from '../AirportFamiliesCarousel/AirportFamiliesCarousel'
+import { AirportFamiliesCarousel } from '../AirportFamiliesCarousel/AirportFamiliesCarousel'
 import { AirportModelsCarousel } from '../AirportModelsCarousel/AirportModelsCarousel'
 
 
 
 
 function RedSeaAirport() {
+
+
+    useEffect(() => {
+
+
+        window.scrollTo(0, 0)
+
+
+
+    }, [])
 
     return (
         <>
