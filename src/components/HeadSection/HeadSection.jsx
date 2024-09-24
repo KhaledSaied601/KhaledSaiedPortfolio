@@ -31,7 +31,7 @@ function HeadSection() {
         <>
 
 
-            <div className='head-section bg-[url("./assets/images/cover.webp")] bg-center bg-fixed flex items-center justify-start bg-contain    md:bg-cover  h-screen head-section w-full mb-32  mx-auto border-s border-gray-500 border-opacity-0 border-dotted delay-400 duration-200  relative ' id='home'>
+            <div className='head-section bg-[url("./assets/images/cover.webp")] bg-center bg-fixed flex items-center justify-start bg-contain bg-no-repeat    md:bg-cover  h-screen head-section w-full mb-32  mx-auto border-s border-gray-500 border-opacity-0 border-dotted delay-400 duration-200  relative ' id='home'>
 
 
                 <div className=' w-full h-full absolute top-0 left-0 bg-black bg-opacity-75'></div>
