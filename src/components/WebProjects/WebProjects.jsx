@@ -13,7 +13,7 @@ function WebProjects() {
 
     return (
         <>
-            <div className='text-white max-w-screen-md lg:max-w-screen-xl mx-auto mt-10 mb-28 relative z-10' id='projects'>
+            <div className='text-white max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto mt-10 mb-28 relative z-10' id='projects'>
 
                 <div className='Web-Head flex gap-2 mb-4 items-center'>
 

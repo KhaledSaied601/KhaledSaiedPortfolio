@@ -65,7 +65,7 @@ export function SideBar() {
     return (
         <>
 
-            <div className="fixed z-30 top-1/3 left-0  flex flex-row ">
+            <div className="fixed z-30 top-1/3 left-0   flex flex-row ">
 
 
 
@@ -80,7 +80,7 @@ export function SideBar() {
                     )}
                 </IconButton>
 
-                <Drawer className="bg-gradient-to-t to-white from-black  " open={isDrawerOpen} onClose={closeDrawer}>
+                <Drawer className="bg-gradient-to-t to-white from-orange-100  " open={isDrawerOpen} onClose={closeDrawer}>
 
 
                     <Card
@@ -91,7 +91,7 @@ export function SideBar() {
                         className="h-[calc(100vh-2rem)] w-full p-4"
                     >
 
-                        <div className="flex-col items-center mb-5">
+                        <div className="flex-col items-center  sm:mb-5">
 
                             <div className="mb-2 flex items-center gap-4 p-4">
                                 <FontAwesomeIcon size="2xl" style={{ color: 'black' }} icon={faGithub} />
@@ -99,9 +99,9 @@ export function SideBar() {
                                     Khaled Saied
                                 </Typography>
                             </div>
-                            <div className="relative w-full h-64">
+                            <div className="relative w-full  h-52">
 
-                                <img className="rounded-xl w-full object-cover" src={Avatar} alt="" />
+                                <img className="rounded-xl w-full h-full object-cover" src={Avatar} alt="" />
 
 
                             </div>

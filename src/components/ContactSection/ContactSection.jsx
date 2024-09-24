@@ -11,7 +11,7 @@ function ContactSection() {
 
     return (
         <>
-            <div className='max-w-screen-md lg:max-w-screen-xl mx-auto my-16 relative z-10' id='contact'>
+            <div className='max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto my-16 relative z-10' id='contact'>
                 <div className='flex gap-2 mb-1'>
 
                     <h3 className='text-purple-500 text-sm sm:text-lg'>Contact  </h3>

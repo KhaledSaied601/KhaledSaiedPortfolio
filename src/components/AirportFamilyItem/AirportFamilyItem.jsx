@@ -33,7 +33,7 @@ justify-center gap-2 text-xs sm:text-lg"><span className='font-semibold'>View in
 
 
 
-                <div className="h-[200px] md:h-[500px] w-full relative rounded-xl">
+                <div className="h-[300px] md:h-[500px] w-full relative rounded-xl">
 
                     <img
                         src={image}
