@@ -131,6 +131,7 @@ function Model3D({ model, setIsShowed, setModelPath }) {
 
                 const file = await fetch(model);
 
+                // console.log(file);
 
 
                 const data = await file.arrayBuffer();
