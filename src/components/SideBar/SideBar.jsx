@@ -1,5 +1,5 @@
 'use client'
-import React from "react";
+import React, { useState } from "react";
 import {
     IconButton,
     Typography,
@@ -40,7 +40,7 @@ import {
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import Avatar from "../../assets/Avatar/idle2.webp"
+import Avatar from "../../assets/images/Avatar/idle2.webp"
 import { Link } from "react-router-dom";
 
 
@@ -52,9 +52,8 @@ export function SideBar() {
 
 
 
-    const [open, setOpen] = React.useState(0);
-    const [openAlert, setOpenAlert] = React.useState(true);
-    const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
+    const [open, setOpen] = useState(0);
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     const handleOpen = (value) => {
         setOpen(open === value ? 0 : value);
@@ -72,7 +71,7 @@ export function SideBar() {
 
 
 
-                <IconButton  variant="text" size="lg" className="bg-white bg-opacity-65 rounded-s-none hover:text-white transition-all duration-500  " onClick={openDrawer}>
+                <IconButton variant="text" size="lg" className="bg-white bg-opacity-65 rounded-s-none hover:text-white transition-all duration-500  " onClick={openDrawer}>
 
                     {isDrawerOpen ? (
                         null
@@ -102,7 +101,7 @@ export function SideBar() {
                             </div>
                             <div className="relative w-full h-64">
 
-                                <img  className="rounded-xl w-full object-cover"  src={Avatar} alt="" />
+                                <img className="rounded-xl w-full object-cover" src={Avatar} alt="" />
 
 
                             </div>

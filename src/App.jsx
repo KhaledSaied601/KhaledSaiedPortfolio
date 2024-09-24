@@ -20,10 +20,10 @@ function App() {
 
 
         { path: 'KhaledSaiedPortfolio', element: <Home /> },
-        { path: 'bimProjectsexit10', element: <Exit10 /> },
-        { path: 'bimProjects/rsAmaalaMarina', element: <RedSeaAmaalaMarina /> },
-        { path: 'bimProjects/rsAirport', element: <RedSeaAirport /> },
-        { path: 'bimDevelopments/navisworksAddin', element: <NavisworksAddin /> },
+        { path: '/bimProjects/exit10', element: <Exit10 /> },
+        { path: '/bimProjects/rsAmaalaMarina', element: <RedSeaAmaalaMarina /> },
+        { path: '/bimProjects/rsAirport', element: <RedSeaAirport /> },
+        { path: '/bimDevelopments/navisworksAddin', element: <NavisworksAddin /> },
 
       ]
     }

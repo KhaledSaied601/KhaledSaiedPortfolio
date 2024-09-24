@@ -3,14 +3,14 @@ import Style from './AirportModelsCarousel.module.css'
 
 
 
-import ARP2 from '../../assets/airport/P2.webp'
-import STP2 from '../../assets/airport/P2STR.webp'
-import AS from '../../assets/airport/AS.webp'
-import STSE from '../../assets/airport/SESTR.webp'
-import ARSE from '../../assets/airport/SE.webp'
-import ARIS from '../../assets/airport/IS.webp'
-import STIS from '../../assets/airport/ISSTR.webp'
-import ARFS from '../../assets/airport/FG.webp'
+import ARP2 from '../../assets/images/airport/P2.webp'
+import STP2 from '../../assets/images/airport/P2STR.webp'
+import AS from '../../assets/images/airport/AS.webp'
+import STSE from '../../assets/images/airport/SESTR.webp'
+import ARSE from '../../assets/images/airport/SE.webp'
+import ARIS from '../../assets/images/airport/IS.webp'
+import STIS from '../../assets/images/airport/ISSTR.webp'
+import ARFS from '../../assets/images/airport/FG.webp'
 import { Carousel } from '@material-tailwind/react'
 import { AirportModelItem } from '../AirportModelItem/AirportModelItem'
 

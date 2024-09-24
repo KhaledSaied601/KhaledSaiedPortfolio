@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Style from './Exit10.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import exit10Image from '../../assets/Exit10/Exit10Mall.webp'
+import exit10Image from '../../assets/images/Exit10/Exit10Mall.webp'
 import { Exit10Carousel } from '../Exit10Carousel/Exit10Carousel'
 
 function Exit10() {

@@ -3,10 +3,10 @@ import Style from './RedSeaAirport.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-import RSI from '../../assets/airport/airportHead.webp'
+import RSI from '../../assets/images/airport/airportHead.webp'
 
-import CT from '../../assets/airport/Clash/Test.webp'
-import CR from '../../assets/airport/Clash/Report.webp'
+import CT from '../../assets/images/airport/Clash/Test.webp'
+import CR from '../../assets/images/airport/Clash/Report.webp'
 import {AirportFamiliesCarousel} from '../AirportFamiliesCarousel/AirportFamiliesCarousel'
 import { AirportModelsCarousel } from '../AirportModelsCarousel/AirportModelsCarousel'
 

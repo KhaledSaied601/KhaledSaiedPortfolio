@@ -29,7 +29,7 @@ function WebProjects() {
                         <Link
                             to="https://khaledsaied601.github.io/Ecommerce"
                             target='_blank'
-                            className="bg-clip-padding lg:h-[206px] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-r after:opacity-25 after:from-black after:to-green-800 relative w-full  min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('/images/Web/eCommerce3.webp')]  bg-cover bg-center   transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                            className="bg-clip-padding lg:h-[206px] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-r after:opacity-25 after:from-black after:to-green-800 relative w-full  min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Web/eCommerce3.webp')]  bg-cover bg-center   transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
 
                         >
                             <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
@@ -47,7 +47,7 @@ function WebProjects() {
                         <Link
                             to="https://khaledsaied601.github.io/Galaxy/"
                             target='_blank'
-                            className="bg-clip-padding lg:h-[206px] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tr after:opacity-25 after:from-black after:to-pink-500 relative w-full  min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('/images/Web/Galaxy.webp')]  bg-cover bg-center lg:bg-left-bottom  transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                            className="bg-clip-padding lg:h-[206px] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tr after:opacity-25 after:from-black after:to-pink-500 relative w-full  min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Web/Galaxy.webp')]  bg-cover bg-center lg:bg-left-bottom  transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
 
                         >
                             <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
@@ -65,7 +65,7 @@ function WebProjects() {
                         <Link
                             to="https://khaledsaied601.github.io/Hunted-House/"
                             target='_blank'
-                            className="bg-clip-padding lg:h-[206px] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-br after:opacity-25 after:from-black after:to-purple-500 relative w-full  min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('/images/Web/HuntedHouse.webp')]  bg-cover bg-center lg:bg-left  transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                            className="bg-clip-padding lg:h-[206px] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-br after:opacity-25 after:from-black after:to-purple-500 relative w-full  min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Web/HuntedHouse.webp')]  bg-cover bg-center lg:bg-left  transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
 
                         >
                             <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>

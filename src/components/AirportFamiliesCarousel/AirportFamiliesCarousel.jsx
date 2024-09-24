@@ -4,19 +4,19 @@ import Style from './AirportFamiliesCarousel.module.css'
 
 
 
-import MN from '../../assets/airport/Fam/MetalNail.webp'
-import RH from '../../assets/airport/Fam/roofHatch.webp'
-import CF from '../../assets/airport/Fam/CurtainFixation.webp'
-import DI from '../../assets/airport/Fam/Door.webp'
-import DHA from '../../assets/airport/Fam/DoorHardware.webp'
-import DHI from '../../assets/airport/Fam/DoorHinge.webp'
-import LA from '../../assets/airport/Fam/Ladder.webp'
-import RS from '../../assets/airport/Fam/RollerShutter.webp'
-import RP from '../../assets/airport/Fam/RoofParapet.webp'
-import SW from '../../assets/airport/Fam/SuspensionWire.webp'
-import TL from '../../assets/airport/Fam/TieLadder.webp'
-import WI from '../../assets/airport/Fam/Window.webp'
-import CC from '../../assets/airport/Fam/CeilingConstruction.webp'
+import MN from '../../assets/images/airport/Fam/MetalNail.webp'
+import RH from '../../assets/images/airport/Fam/roofHatch.webp'
+import CF from '../../assets/images/airport/Fam/CurtainFixation.webp'
+import DI from '../../assets/images/airport/Fam/Door.webp'
+import DHA from '../../assets/images/airport/Fam/DoorHardware.webp'
+import DHI from '../../assets/images/airport/Fam/DoorHinge.webp'
+import LA from '../../assets/images/airport/Fam/Ladder.webp'
+import RS from '../../assets/images/airport/Fam/RollerShutter.webp'
+import RP from '../../assets/images/airport/Fam/RoofParapet.webp'
+import SW from '../../assets/images/airport/Fam/SuspensionWire.webp'
+import TL from '../../assets/images/airport/Fam/TieLadder.webp'
+import WI from '../../assets/images/airport/Fam/Window.webp'
+import CC from '../../assets/images/airport/Fam/CeilingConstruction.webp'
 import { Carousel } from '@material-tailwind/react'
 import { AirportFamilyItem } from '../AirportFamilyItem/AirportFamilyItem'
 import Model3D from '../Model3D/Model3D'
@@ -32,15 +32,15 @@ export function AirportFamiliesCarousel() {
 
 
     const familiesElement = [
-        { image: RH, title: "Roof Hatch with Fixation", Has3D: true, modelPath: "../../assets/frag/Fam/roofHatch.frag" },
-        { image: CF, title: "Curtain Wall Fixation", Has3D: true, modelPath: "../../assets/frag/Fam/CurtainFixation.frag" },
-        { image: CC, title: "Ceiling Construction", Has3D: true, modelPath: "../../assets/frag/Fam/CeilingConstruction.frag" },
-        { image: SW, title: "Suspension Wire", Has3D: true, modelPath: "../../assets/frag/Fam/SuspensionWire.frag" },
-        { image: TL, title: "Tie Ladder with Fixation", Has3D: true, modelPath: "../../assets/frag/Fam/TieLadder.frag" },
-        { image: RS, title: "Roller Shutter", Has3D: true, modelPath: "../../assets/frag/Fam/RollerShutter.frag" },
-        { image: RP, title: "Roof Parapet", Has3D: true, modelPath: "../../assets/frag/Fam/RoofParapet.frag" },
-        { image: WI, title: "Window Fixation", Has3D: true, modelPath: "../../assets/frag/Fam/Window.frag" },
-        { image: DI, title: "Door with Fixation and Accessories", Has3D: true, modelPath: "../../assets/frag/Fam/Door.frag" },
+        { image: RH, title: "Roof Hatch with Fixation", Has3D: true, modelPath: "../../../frag/Fam/roofHatch.frag" },
+        { image: CF, title: "Curtain Wall Fixation", Has3D: true, modelPath: "../../../frag/Fam/CurtainFixation.frag" },
+        { image: CC, title: "Ceiling Construction", Has3D: true, modelPath: "../../../frag/Fam/CeilingConstruction.frag" },
+        { image: SW, title: "Suspension Wire", Has3D: true, modelPath: "../../../frag/Fam/SuspensionWire.frag" },
+        { image: TL, title: "Tie Ladder with Fixation", Has3D: true, modelPath: "../../../frag/Fam/TieLadder.frag" },
+        { image: RS, title: "Roller Shutter", Has3D: true, modelPath: "../../../frag/Fam/RollerShutter.frag" },
+        { image: RP, title: "Roof Parapet", Has3D: true, modelPath: "../../../frag/Fam/RoofParapet.frag" },
+        { image: WI, title: "Window Fixation", Has3D: true, modelPath: "../../../frag/Fam/Window.frag" },
+        { image: DI, title: "Door with Fixation and Accessories", Has3D: true, modelPath: "../../../frag/Fam/Door.frag" },
         { image: DHA, title: "Door Hardware", Has3D: false, modelPath: null },
         { image: DHI, title: "Door Hinge", Has3D: false, modelPath: null },
         { image: MN, title: "Metal Nail", Has3D: false, modelPath: null },
@@ -87,6 +87,7 @@ export function AirportFamiliesCarousel() {
 
 
             </Carousel>
+
 
 
             {is3DShowed ? <Model3D model={modelPath} setModelPath={setModelPath} setIsShowed={setIs3DShowed} /> : null}

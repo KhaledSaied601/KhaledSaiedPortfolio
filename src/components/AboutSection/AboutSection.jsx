@@ -22,12 +22,10 @@ function AboutSection() {
 
                 <p className="text-white text-xs sm:text-sm">
                     A rising senior BIM Engineer who is determined to make the whole “engineering operation” operated in such a slick and efficient way ,enhances engineering with multi technologies.
-                     I have experience in tender documents, quantity surveying, pricing information and cost analysis. I have strong knowledge in innovatively engineering softwares,
-                      3d modeling up to LOD500, programming and social media.
-                    I have worked on myself to make 3d models for both large and small projects.
-                     I have knowledge in agile, lean methodologies and BIM management, and am passionate about working with teams to put forth the best project possible.
-                    I am a firm believer that coordination is most important key to success, and carry this principle on everything I do. I value forming meaningful relationships,
-                     always giving 110%, and making the people I work with satisfied.</p>
+                    I graduated with a degree in Civil Engineering in 2020. Following my graduation, I served as a military officer for three years. During my time in the military, I dedicated myself to advancing my skills in Building Information Modeling (BIM).
+                    After completing my military service, I transitioned into the role of a BIM Coordinator, working on large-scale projects. This experience allowed me to gain extensive knowledge and practical expertise. Committed to continuous learning, I furthered my education in BIM Development and programming languages.
+                    The portfolio I have created showcases my proficiency in these areas. I hope you find it insightful and enjoy your experience reviewing it.
+                </p>
 
             </div>
         </>

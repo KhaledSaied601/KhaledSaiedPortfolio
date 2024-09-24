@@ -6,12 +6,12 @@ import { Carousel } from "@material-tailwind/react";
 
 
 
-import FP from "../../assets/Exit10/EkartFP.webp"
-import CD from "../../assets/Exit10/EkartCD.webp"
-import ABD from "../../assets/Exit10/EkartABDetails.webp"
-import ABP from "../../assets/Exit10/EkartABPlans.webp"
-import EPD from "../../assets/Exit10/EkartEPDetails.webp"
-import EPP from "../../assets/Exit10/EkartEPPlans.webp"
+import FP from "../../assets/images/Exit10/EkartFP.webp"
+import CD from "../../assets/images/Exit10/EkartCD.webp"
+import ABD from "../../assets/images/Exit10/EkartABDetails.webp"
+import ABP from "../../assets/images/Exit10/EkartABPlans.webp"
+import EPD from "../../assets/images/Exit10/EkartEPDetails.webp"
+import EPP from "../../assets/images/Exit10/EkartEPPlans.webp"
 import { Exit10SheetItem } from '../Exit10SheetItem/Exit10SheetItem';
 
 

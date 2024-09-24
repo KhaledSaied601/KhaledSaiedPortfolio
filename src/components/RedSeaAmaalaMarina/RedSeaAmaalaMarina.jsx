@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Style from './RedSeaAmaalaMarina.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import RSM from '../../assets/Marina/Marina.webp'
+import RSM from '../../assets/images/Marina/Marina.webp'
 import { MarinaCoordinationCarousel } from '../MarinaCoordinationCarousel/MarinaCoordinationCarousel'
 
 
