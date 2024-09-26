@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Style from './HeadSection.module.css'
 import $ from 'jquery'
+import { Canvas } from '@react-three/fiber'
+import Avatar from '../Avatar/Avatar'
+import Enviro from '../Enviro/Enviro'
 
 
 function HeadSection() {
@@ -19,7 +22,7 @@ function HeadSection() {
         document.querySelector('.head-section')?.classList.remove('border-opacity-0')
 
 
-       
+
 
 
 
@@ -31,7 +34,16 @@ function HeadSection() {
         <>
 
 
-            <div className='head-section bg-[url("./assets/images/cover.webp")] bg-center bg-fixed flex items-center justify-start bg-contain bg-no-repeat    md:bg-cover  h-screen head-section w-full mb-32  mx-auto border-s border-gray-500 border-opacity-0 border-dotted delay-400 duration-200  relative ' id='home'>
+            <Canvas shadows={true} camera={{ position: [0, 1.4, 5] }} style={{ position: 'relative', zIndex: 10, top: 0, left: 0, width: '100%', height: '100vh' }}   >
+                <Enviro />
+                {/* <color args={[0x000000]} attach={'background'} /> */}
+                {/* <Avatar /> */}
+            </Canvas>
+
+
+
+            {/* 
+            <div className='head-section bg-[url("./assets/images/cover.webp")]   bg-center bg-fixed flex items-center justify-start bg-contain bg-no-repeat    md:bg-cover  h-screen head-section w-full mb-32  mx-auto border-s border-gray-500 border-opacity-0 border-dotted delay-400 duration-200  relative ' id='home'>
 
 
                 <div className=' w-full h-full absolute top-0 left-0 bg-black bg-opacity-75'></div>
@@ -41,7 +53,11 @@ function HeadSection() {
                     <h3 className='text-lg sm:text-xl font-semibold my-3 head-content delay-200 duration-200 relative left-[100%]'>BIM Coordinator</h3>
                 </div>
 
-            </div>
+            </div> */}
+
+
+
+
 
         </>
     )
