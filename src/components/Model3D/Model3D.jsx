@@ -253,9 +253,9 @@ function Model3D({ model, setIsShowed, setModelPath }) {
     return (
 
         <>
-            <div style={{ scale: 0, opacity: 0 }} className="model-3D-section h-screen w-screen bg-black bg-opacity-85  fixed top-0 left-0 z-40   ">
+            <div style={{ scale: 0, opacity: 0 }} className="model-3D-section h-screen w-screen bg-black bg-opacity-85  fixed top-0 left-0 z-40  flex items-center justify-center  ">
 
-                <div id='app' className=' overflow-hidden rounded-xl w-1/2 h-1/2 absolute top-0  left-0 translate-x-1/2 translate-y-1/2    bg-white flex flex-row' ></div>
+                <div id='app' className=' overflow-hidden rounded-xl w-[70%] h-[70%]  sm:w-1/2 sm:h-1/2 relative      bg-white flex flex-row' ></div>
 
             </div>
         </>

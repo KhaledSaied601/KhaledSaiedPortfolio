@@ -31,7 +31,7 @@ export function AirportModelsCarousel() {
         { image: STSE, title: "Structural Security Check" },
         { image: ARIS, title: "Architectural Irrigation Pump Station" },
         { image: STIS, title: "Structural Irrigation Pump Station" },
-        { image: ARFS, title: "Structural Fuel Storage" },
+        { image: ARFS, title: "Architectural Fuel Storage" },
 
     ]
 

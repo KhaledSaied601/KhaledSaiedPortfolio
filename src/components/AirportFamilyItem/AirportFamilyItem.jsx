@@ -27,7 +27,7 @@ export function AirportFamilyItem({ image, title, Has3D, modelPath, setModelPath
 
                     className="absolute z-10 top-0 right-0 translate-y-[25%] -translate-x-[50%]  rounded-xl px-5 py-3  bg-white
 bg-opacity-35 text-white hover:outline hover:outline-1  hover:bg-opacity-0 transition-all duration-200 flex flex-row items-center 
-justify-center gap-2 text-xs sm:text-lg"><span className='font-semibold'>View in 3D</span> <FontAwesomeIcon  color="white" size="2xl" icon={faUnity} spin /> </button> : null}
+justify-center gap-2 text-[10px] sm:text-lg"><span className='font-semibold'>View in 3D</span> <FontAwesomeIcon  color="white" size="2xl" icon={faUnity} spin /> </button> : null}
 
 
 

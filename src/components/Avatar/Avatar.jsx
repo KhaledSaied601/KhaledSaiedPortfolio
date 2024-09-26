@@ -32,7 +32,7 @@ function Avatar() {
 
         }, 3000)
 
-        gsap.to(camera.position, { z: 1.5, duration: 3, ease: 'power2.inOut' })
+        gsap.to(camera.position, { z: 1.8, duration: 3, ease: 'power2.inOut' })
         gsap.to('.label1', { opacity: 0, delay: 3, duration: 3 })
         transformations.fromTo('.label2', { opacity: 0 }, { opacity: 100 })
 
@@ -54,7 +54,8 @@ function Avatar() {
         if (window.innerWidth < 750) {
 
 
-            gsap.to(camera.position, { z: 2, duration: 3, ease: 'power2.inOut' })
+            gsap.to(camera.position, { z: 2.5, duration: 3, ease: 'power2.inOut' })
+            gsap.to('.label2', { fontSize: '12px'})
 
         }
 
@@ -87,7 +88,7 @@ function Avatar() {
 
 
                     }}
-                    position={[0.25, 1.5, 0]}
+                    position={[0.1, 1.8, 0]}
                     wrapperClass="label1"
                 >Hello 👋</Html>
                 <Html
@@ -104,8 +105,9 @@ function Avatar() {
                         userSelect: 'none',
 
 
+
                     }}
-                    position={[0.25, 1.5, 0]}
+                    position={[0.1, 1.8, 0]}
                     wrapperClass="label2"
                 >That's a my portfolio 👉
                     <br />

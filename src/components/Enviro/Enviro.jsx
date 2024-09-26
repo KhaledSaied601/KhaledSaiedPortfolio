@@ -45,6 +45,7 @@ function Enviro() {
                 floatIntensity={0.1}>
 
                 <Text
+
                     font="/KhaledSaiedPortfolio/bangers-v20-latin-regular.woff"
                     fontSize={0.04}
                     color="white"
