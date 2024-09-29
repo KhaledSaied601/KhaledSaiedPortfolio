@@ -80,7 +80,7 @@ export function SideBar() {
                     )}
                 </IconButton>
 
-                <Drawer className="bg-gradient-to-t to-white from-orange-100  " open={isDrawerOpen} onClose={closeDrawer}>
+                <Drawer className="bg-gradient-to-t to-black from-orange-200 " open={isDrawerOpen} onClose={closeDrawer}>
 
 
                     <Card
@@ -94,8 +94,8 @@ export function SideBar() {
                         <div className="flex-col items-center  sm:mb-5">
 
                             <div className="mb-2 flex items-center gap-4 p-4">
-                                <FontAwesomeIcon size="2xl" style={{ color: 'black' }} icon={faGithub} />
-                                <Typography variant="h5" color="black">
+                                <FontAwesomeIcon size="2xl" style={{ color: 'white' }} icon={faGithub} />
+                                <Typography variant="h5" color="white">
                                     Khaled Saied
                                 </Typography>
                             </div>
@@ -129,7 +129,7 @@ export function SideBar() {
 
 
 
-                                <ListItem className="text-black">
+                                <ListItem className="text-white hover:text-black">
                                     <ListItemPrefix>
                                         <PresentationChartBarIcon className="h-5 w-5 " />
 
@@ -142,26 +142,28 @@ export function SideBar() {
 
 
 
-                                <ListItem className="p-0" selected={open === 1}>
+                                <ListItem className="p-0 hover:text-black" selected={open === 1}>
 
                                     <AccordionHeader
                                         onClick={() => handleOpen(1)}
-                                        className="border-b-0 p-3 text-black"
+                                        className="border-b-0 p-3 text-white"
                                     >
                                         <ListItemPrefix>
-                                            <BuildingOffice2Icon className="h-5 w-5 text-black" />
+                                            <GlobeAltIcon className="h-5 w-5" />
                                         </ListItemPrefix>
-                                        <Typography color="blue-gray" className="mr-auto font-normal text-black">
+
+                                        <Typography className="mr-auto font-normal">
                                             BIM Projects
                                         </Typography>
                                     </AccordionHeader>
+
                                 </ListItem>
 
 
                                 <AccordionBody className="py-1 ">
 
                                     <List className="p-0">
-                                        <ListItem className="text-black">
+                                        <ListItem className="text-white">
                                             <ListItemPrefix >
                                                 <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                             </ListItemPrefix>
@@ -170,7 +172,7 @@ export function SideBar() {
 
                                         </ListItem>
 
-                                        <ListItem className="text-black">
+                                        <ListItem className="text-white">
                                             <ListItemPrefix>
                                                 <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                             </ListItemPrefix>
@@ -182,7 +184,7 @@ export function SideBar() {
 
                                         </ListItem>
 
-                                        <ListItem className="text-black">
+                                        <ListItem className="text-white">
                                             <ListItemPrefix>
                                                 <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                             </ListItemPrefix>
@@ -195,7 +197,7 @@ export function SideBar() {
 
                                         </ListItem>
 
-                                        <ListItem className="text-black">
+                                        <ListItem className="text-white">
                                             <ListItemPrefix>
                                                 <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                             </ListItemPrefix>
@@ -208,7 +210,7 @@ export function SideBar() {
 
                                         </ListItem>
 
-                                        {/* <ListItem className="text-black">
+                                        {/* <ListItem className="text-white">
                       <ListItemPrefix>
                         <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                       </ListItemPrefix>
@@ -222,7 +224,7 @@ export function SideBar() {
                     </ListItem>
 
 
-                    <ListItem className="text-black">
+                    <ListItem className="text-white">
                       <ListItemPrefix>
                         <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                       </ListItemPrefix>
@@ -256,10 +258,10 @@ export function SideBar() {
                                     />
                                 }
                             >
-                                <ListItem className="p-0" selected={open === 2}>
+                                <ListItem className="p-0 " selected={open === 2}>
                                     <AccordionHeader
                                         onClick={() => handleOpen(2)}
-                                        className="border-b-0 p-3 text-black"
+                                        className="border-b-0 p-3 text-white"
                                     >
                                         <ListItemPrefix>
                                             <GlobeAltIcon className="h-5 w-5" />
@@ -273,7 +275,7 @@ export function SideBar() {
 
                                 <AccordionBody className="py-1">
 
-                                    <List className="p-0 text-black">
+                                    <List className="p-0 text-white">
 
                                         <ListItem>
                                             <ListItemPrefix>
