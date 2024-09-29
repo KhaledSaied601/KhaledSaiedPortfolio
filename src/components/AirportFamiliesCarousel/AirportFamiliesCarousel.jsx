@@ -50,8 +50,8 @@ export function AirportFamiliesCarousel() {
 
 
     return (
-        <>
 
+        <div>
 
             <Carousel
 
@@ -89,9 +89,8 @@ export function AirportFamiliesCarousel() {
             </Carousel>
 
 
-
             {is3DShowed ? <Model3D model={modelPath} setModelPath={setModelPath} setIsShowed={setIs3DShowed} /> : null}
-        </>
+        </div>
 
     );
 }

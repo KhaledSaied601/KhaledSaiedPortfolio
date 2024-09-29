@@ -124,76 +124,76 @@ function RedSeaAirport() {
 
                     </div>
 
-
-
-                    <div className='families  flex items-center justify-between my-5  h-screen '>
-
-                        <div className='inner flex flex-col justify-center  items-start gap-7 ' >
-
-
-
-                            <div className='description flex flex-col items-start text-white '>
-                                <h1 className='text-xl sm:text-3xl font-bold mb-5'>Families</h1>
-                                <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>To LOD 500<FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
-                                <p className='text-sm sm:text-lg font-light'>One of the most interesting aspects of my role was upgrading and creating families to Level of Development (LOD) 500 according to vendor designs. You can now explore these detailed models in 3D and enjoy them in this portfolio.</p>
-                            </div>
-
-                            <AirportFamiliesCarousel />
-
-
-
-
-
-
-                        </div>
-
-                    </div>
-
-
-
-
-
-
-
-
-
-                    <div className='clash-detaction flex items-center mb-24  h-screen'>
-
-                        <div className='inner flex lg:flex-row  justify-between items-center sm:px-4 flex-col  gap-14 ' >
-
-
-                            <div className='description flex flex-col items-start text-white lg:w-1/2 w-full'>
-                                <h1 className='text-xl sm:text-3xl font-bold mb-5'>Clash Detaction</h1>
-                                <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>Weekly updating Clash Tests <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
-                                <p className='text-sm sm:text-lg font-light'>Every week, I updated the clash tests for all disciplines and generated detailed clash reports. I then uploaded the RVT, NWC, and NWD files, along with the clash reports, to BIM 360 for team access and review.</p>
-                            </div>
-
-
-
-                            <div className='flex flex-col gap-3 lg:w-1/2 w-full '>
-
-                                <div className='h-60 lg:h-72  relative'>
-
-                                    <img className='rounded-xl w-full h-full object-cover' src={CT} alt="" />
-                                </div>
-
-                                <div className='h-60 lg:h-72  relative'>
-
-                                    <img className='rounded-xl w-full h-full object-cover' src={CR} alt="" />
-                                </div>
-
-
-
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div>
-
                 </motion.div>
+
+
+                <div className='families  flex items-center justify-between my-5  h-screen '>
+
+                    <div className='inner flex flex-col justify-center  items-start gap-7 ' >
+
+
+
+                        <div className='description flex flex-col items-start text-white '>
+                            <h1 className='text-xl sm:text-3xl font-bold mb-5'>Families</h1>
+                            <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>To LOD 500<FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
+                            <p className='text-sm sm:text-lg font-light'>One of the most interesting aspects of my role was upgrading and creating families to Level of Development (LOD) 500 according to vendor designs. You can now explore these detailed models in 3D and enjoy them in this portfolio.</p>
+                        </div>
+
+                        <AirportFamiliesCarousel />
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div className='clash-detaction flex items-center mb-24  h-screen'>
+
+                    <div className='inner flex lg:flex-row  justify-between items-center sm:px-4 flex-col  gap-14 ' >
+
+
+                        <div className='description flex flex-col items-start text-white lg:w-1/2 w-full'>
+                            <h1 className='text-xl sm:text-3xl font-bold mb-5'>Clash Detaction</h1>
+                            <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>Weekly updating Clash Tests <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
+                            <p className='text-sm sm:text-lg font-light'>Every week, I updated the clash tests for all disciplines and generated detailed clash reports. I then uploaded the RVT, NWC, and NWD files, along with the clash reports, to BIM 360 for team access and review.</p>
+                        </div>
+
+
+
+                        <div className='flex flex-col gap-3 lg:w-1/2 w-full '>
+
+                            <div className='h-60 lg:h-72  relative'>
+
+                                <img className='rounded-xl w-full h-full object-cover' src={CT} alt="" />
+                            </div>
+
+                            <div className='h-60 lg:h-72  relative'>
+
+                                <img className='rounded-xl w-full h-full object-cover' src={CR} alt="" />
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
 
 
 

@@ -4,6 +4,7 @@ import { Environment, Float, Lightformer, OrbitControls, Sparkles, Stars, Text }
 import Avatar from '../Avatar/Avatar';
 import gsap from 'gsap';
 import { useRef } from 'react';
+import PlaceHolder from '../PlaceHolder/PlaceHolder';
 
 function Enviro() {
 
@@ -88,7 +89,7 @@ function Enviro() {
                 <meshBasicMaterial color="orange" />
             </mesh>
 
-            <Suspense >
+            <Suspense fallback={<PlaceHolder position-y={0.5} scale={[2, 3, 2]} />} >
 
                 <Avatar />
 
