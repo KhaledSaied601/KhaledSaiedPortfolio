@@ -25,10 +25,9 @@ function Enviro() {
         <>
 
 
-            {/* <OrbitControls /> */}
 
 
-            <directionalLight castShadow
+            <directionalLight
 
                 color="blue"
                 ref={directionalLight}
@@ -75,7 +74,6 @@ function Enviro() {
             <Environment
 
             >
-                {/* <color args={['#4A47A4']} attach="background" /> */}
                 <Lightformer color="red" intensity={0.5} position={[-1, 0, 0]} rotation-y={Math.PI * 0.5} scale={20} />
             </Environment>
 
@@ -84,10 +82,10 @@ function Enviro() {
 
 
 
-            <mesh receiveShadow rotation-x={-Math.PI * 0.5} scale={10}  >
+            <mesh rotation-x={-Math.PI * 0.5} scale={10}  >
 
                 <planeGeometry />
-                <meshBasicMaterial color="#9D5F01" />
+                <meshBasicMaterial color="orange" />
             </mesh>
 
             <Suspense >

@@ -24,6 +24,7 @@
     "@thatopen/components": "^2.2.11",
     "@thatopen/components-front": "^2.2.2",
     "@thatopen/ui": "^2.2.2",
+    "framer-motion": "^11.9.0",
     "gh-pages": "^6.1.1",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",

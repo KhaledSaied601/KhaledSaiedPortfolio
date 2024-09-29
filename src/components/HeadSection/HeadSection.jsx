@@ -34,10 +34,9 @@ function HeadSection() {
         <>
 
 
-            <Canvas shadows={true} camera={{ position: [0, 1.4, 5] }} style={{ position: 'relative', zIndex: 10, top: 0, left: 0, width: '100%', height: '100vh' }}   >
+            <Canvas  camera={{ position: [0, 1.4, 5] }} style={{ position: 'relative', zIndex: 10, top: 0, left: 0, width: '100%', height: '100vh' }}   >
                 <Enviro />
-                {/* <color args={[0x000000]} attach={'background'} /> */}
-                {/* <Avatar /> */}
+     
             </Canvas>
 
 

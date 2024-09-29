@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Style from './Avatar.module.css'
 import { Html, useAnimations, useGLTF } from '@react-three/drei';
-import { useThree } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
 import gsap from 'gsap';
 
 
@@ -10,7 +10,6 @@ function Avatar() {
 
 
     const avatar = useGLTF("/KhaledSaiedPortfolio/models/KhaledAvatar/KhaledAvatar.gltf")
-    console.log(avatar);
 
     const animations = useAnimations(avatar.animations, avatar.scene)
     const { camera } = useThree()
@@ -32,21 +31,19 @@ function Avatar() {
 
         }, 3000)
 
+
+
         gsap.to(camera.position, { z: 1.8, duration: 3, ease: 'power2.inOut' })
+
+        //Animate Hide of Label1
         gsap.to('.label1', { opacity: 0, delay: 3, duration: 3 })
+
+        //Hide Label2 then show it 
+        gsap.to('.label2', { opacity: 0 })
         transformations.fromTo('.label2', { opacity: 0 }, { opacity: 100 })
 
 
 
-        // console.log(window.innerWidth);
-
-
-        // console.log(camera);
-
-
-        // console.log(camera.position);
-
-        // camera.lookAt(avatar.scene.children[3].position)
     }, [])
 
     useEffect(() => {
@@ -55,7 +52,7 @@ function Avatar() {
 
 
             gsap.to(camera.position, { z: 2.5, duration: 3, ease: 'power2.inOut' })
-            gsap.to('.label2', { fontSize: '12px'})
+            gsap.to('.label2', { fontSize: '12px' })
 
         }
 
@@ -72,7 +69,7 @@ function Avatar() {
 
 
 
-            <primitive castShadow object={avatar.scene} >
+            <primitive  object={avatar.scene} >
                 <Html
                     style={{
 
@@ -106,10 +103,11 @@ function Avatar() {
 
 
 
+
                     }}
                     position={[0.1, 1.8, 0]}
                     wrapperClass="label2"
-                >That's a my portfolio 👉
+                >That's my portfolio 👇
                     <br />
                     i hope you enjoy 👍
                 </Html>

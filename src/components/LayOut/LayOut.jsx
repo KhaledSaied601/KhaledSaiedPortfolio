@@ -24,6 +24,7 @@ function LayOut() {
 
     return (
         <>
+        
             <Outlet />
             <SideBar/>
         </>
