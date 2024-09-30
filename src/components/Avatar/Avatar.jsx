@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Style from './Avatar.module.css'
 import { Html, useAnimations, useGLTF } from '@react-three/drei';
 import { useFrame, useThree } from '@react-three/fiber';
 import gsap from 'gsap';
+import * as THREE from 'three'
 
 
 function Avatar() {
 
 
 
+    const [material, setMaterial] = useState()
     const avatar = useGLTF("/KhaledSaiedPortfolio/models/KhaledAvatar/KhaledAvatar.gltf")
 
+
+
+    const primitive = useRef()
     const animations = useAnimations(avatar.animations, avatar.scene)
     const { camera } = useThree()
 
@@ -19,6 +24,9 @@ function Avatar() {
 
 
     useEffect(() => {
+
+
+       
 
 
         const actions = animations.actions
@@ -67,9 +75,9 @@ function Avatar() {
 
         <>
 
+            <meshNormalMaterial color="blue" ref={setMaterial} opacity={0.5} transparent={true} />
 
-
-            <primitive  object={avatar.scene} >
+            <primitive ref={primitive} object={avatar.scene} >
                 <Html
                     style={{
 
@@ -111,6 +119,7 @@ function Avatar() {
                     <br />
                     i hope you enjoy 👍
                 </Html>
+
             </primitive>
 
 
