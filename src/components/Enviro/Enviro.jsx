@@ -6,7 +6,8 @@ import gsap from 'gsap';
 import { useRef } from 'react';
 import PlaceHolder from '../PlaceHolder/PlaceHolder';
 import { useFrame } from '@react-three/fiber';
-import { BlueAvatar } from '../BlueAvatar/BlueAvatar';
+import { Bloom, EffectComposer, ToneMapping } from '@react-three/postprocessing';
+import { ToneMappingMode } from 'postprocessing';
 
 function Enviro() {
 
@@ -16,7 +17,6 @@ function Enviro() {
 
     useEffect(() => {
 
-        // console.log(directional.current);
 
         gsap.to(directionalLight.current, { intensity: 5, duration: 5, ease: 'power2.inOut' })
         gsap.to(ambientLight.current, { intensity: 1.5, duration: 5, ease: 'power2.inOut' })
@@ -34,6 +34,14 @@ function Enviro() {
         <>
 
 
+            <EffectComposer>
+                <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
+                <Bloom
+                    mipmapBlur
+                    intensity={0.5}
+                    luminanceThreshold={1}
+                />
+            </EffectComposer>
 
 
             <directionalLight
@@ -87,20 +95,19 @@ function Enviro() {
             </Environment>
 
 
-            <Sparkles ref={sparkles} size={1} scale={[1, 1.5, 1]} speed={0.1} color="white" position-y={1.4} position-z={-0.1} ></Sparkles>
+            <Sparkles ref={sparkles} count={70} size={0.8} scale={[1, 1.5, 0.8]} speed={0.1} color="lightblue" position-y={1.4} position-z={-0.1} ></Sparkles>
 
 
 
-            <mesh rotation-x={-Math.PI * 0.5} scale={10}  >
+            <mesh rotation-x={-Math.PI * 0.5} scale-x={10} scale-y={50}  >
 
                 <planeGeometry />
-                <meshBasicMaterial color="orange" />
+                <meshStandardMaterial emissive="orange" emissiveIntensity={1} color="orange" />
             </mesh>
 
             <Suspense fallback={<PlaceHolder position-y={1} scale={[1, 2, 1]} />} >
 
                 <Avatar />
-                {/* <BlueAvatar /> */}
 
             </Suspense>
 

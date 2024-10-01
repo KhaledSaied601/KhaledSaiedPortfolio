@@ -26,7 +26,11 @@ function Avatar() {
     useEffect(() => {
 
 
-       
+        // avatar.scene.children[0].children.forEach((o) => {
+        //     console.log(o.material);
+        //     o.material?.color.set(new THREE.Color('red')) 
+        // })
+
 
 
         const actions = animations.actions
