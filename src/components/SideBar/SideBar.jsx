@@ -27,11 +27,13 @@ import {
     BuildingOffice2Icon,
     Square3Stack3DIcon,
     GlobeAltIcon,
+    CubeTransparentIcon,
+    BuildingOfficeIcon
 } from "@heroicons/react/24/solid"
 import {
     ChevronRightIcon,
     ChevronDownIcon,
-    CubeTransparentIcon,
+    
     MagnifyingGlassIcon,
     Bars3Icon,
     XMarkIcon,
@@ -42,6 +44,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Avatar from "../../assets/images/Avatar/idle2.webp"
 import { Link } from "react-router-dom";
+import { CubeIcon } from "@heroicons/react/16/solid";
 
 
 
@@ -149,7 +152,7 @@ export function SideBar() {
                                         className="border-b-0 p-3 text-white"
                                     >
                                         <ListItemPrefix>
-                                            <GlobeAltIcon className="h-5 w-5" />
+                                            <BuildingOfficeIcon className="h-5 w-5" />
                                         </ListItemPrefix>
 
                                         <Typography className="mr-auto font-normal">
@@ -245,9 +248,6 @@ export function SideBar() {
 
 
 
-
-
-
                             <Accordion
                                 open={open === 2}
                                 icon={
@@ -261,6 +261,60 @@ export function SideBar() {
                                 <ListItem className="p-0 " selected={open === 2}>
                                     <AccordionHeader
                                         onClick={() => handleOpen(2)}
+                                        className="border-b-0 p-3 text-white"
+                                    >
+                                        <ListItemPrefix>
+                                            <CubeTransparentIcon className="h-5 w-5" />
+                                        </ListItemPrefix>
+
+                                        <Typography className="mr-auto font-normal">
+                                            Computational
+                                        </Typography>
+                                    </AccordionHeader>
+                                </ListItem>
+
+
+                                <AccordionBody className="py-1">
+
+                                    <List className="p-0 text-white">
+
+                                        <ListItem>
+                                            <ListItemPrefix>
+                                                <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                            </ListItemPrefix>
+
+                                            <Link
+                                                to="computationalDesign/grasshopperScripts"
+                                                >
+                                                Grasshopper
+
+                                            </Link>
+
+                                        </ListItem>
+
+                                     
+                                    </List>
+
+
+                                </AccordionBody>
+
+                                
+                            </Accordion>
+
+
+                            <Accordion
+                                open={open === 3}
+                                icon={
+                                    <ChevronDownIcon
+                                        strokeWidth={2.5}
+                                        className={`mx-auto h-4 w-4 transition-transform ${open === 3 ? "rotate-180" : ""
+                                            }`}
+                                    />
+                                }
+                            >
+                                <ListItem className="p-0 " selected={open === 3}>
+                                    <AccordionHeader
+                                        onClick={() => handleOpen(3)}
                                         className="border-b-0 p-3 text-white"
                                     >
                                         <ListItemPrefix>
@@ -320,6 +374,10 @@ export function SideBar() {
 
                                 </AccordionBody>
                             </Accordion>
+
+
+
+                       
 
 
 

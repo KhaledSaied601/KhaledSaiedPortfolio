@@ -8,6 +8,7 @@ import WebProjects from '../WebProjects/WebProjects';
 import ContactSection from '../ContactSection/ContactSection';
 import { motion, useAnimation, useInView } from "framer-motion"
 import { use } from 'framer-motion/client';
+import ComputationalDesign from '../ComputationalDesignSection/ComputationalDesignSection';
 
 
 function Home() {
@@ -31,6 +32,7 @@ function Home() {
 
             <AboutSection />
             <BimProjectsSection />
+            <ComputationalDesign/>
             <WebProjects />
             <ContactSection />
 

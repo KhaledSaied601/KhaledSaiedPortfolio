@@ -33,11 +33,11 @@ function HeadSection() {
     return (
         <>
 
-
+{/* 
             <Canvas id='home' camera={{ position: [0, 1.4, 5] }} style={{ position: 'relative', zIndex: 10, top: 0, left: 0, width: '100%', height: '100vh' }}   >
                 <Enviro />
      
-            </Canvas>
+            </Canvas> */}
 
 
 
