@@ -65,7 +65,7 @@ function GrasshopperScripts() {
 
                                 <div className='description flex flex-col items-start text-white w-full'>
                                     <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>Interoperability <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
-                                    <p className='text-sm sm:text-lg font-light'>Interoperability refers to the ability to manipulate and exchange geometry between different software applications seamlessly. To demonstrate this, I developed a Grasshopper script that creates a simple parametric model. This model can then be transferred to Tekla Structure Software and subsequently imported into Revit Software. As a result, I have native elements within both Tekla and Revit, showcasing the smooth interoperability between these platforms. </p>
+                                    <p className='text-sm sm:text-lg font-light'>Interoperability refers to the ability to manipulate and exchange geometry between different software applications seamlessly. So i made a Grasshopper script that creates a simple parametric model. This model can then be transferred to Tekla Structure Software and subsequently imported into Revit Software. As a result, I have native elements within both Tekla and Revit, showcasing the smooth interoperability between these platforms. </p>
 
                                 </div>
 
@@ -84,7 +84,7 @@ function GrasshopperScripts() {
 
                                 <div className='description flex flex-col items-start text-white w-full'>
                                     <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>Structural analysis and optimization <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
-                                    <p className='text-sm sm:text-lg font-light'>Using Karamba3D, I perform structural analysis and optimization for various structural elements. This is one of my scripts designed to analyze and optimize specific parameters using Galapagos for enhanced efficiency and performance. </p>
+                                    <p className='text-sm sm:text-lg font-light'>Using Karamba3D, I perform structural analysis and optimization for various structural elements. This is one of my scripts created to analyze and optimize specific parameters using Galapagos for enhanced efficiency and performance. </p>
 
                                 </div>
 
@@ -103,7 +103,7 @@ function GrasshopperScripts() {
 
                                 <div className='description flex flex-col items-start text-white w-full'>
                                     <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>Form Finiding <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
-                                    <p className='text-sm sm:text-lg font-light'>Using Kangaroo within a physics environment, I develop scripts for form finding. By applying specific constraints and goals, I achieve the desired shapes with precision. </p>
+                                    <p className='text-sm sm:text-lg font-light'>Using Kangaroo within a physics environment, This scripts for form finding. By applying specific constraints and goals, I achieve the desired shapes with precision. </p>
 
                                 </div>
 
