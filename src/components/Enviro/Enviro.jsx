@@ -48,7 +48,7 @@ function Enviro() {
 
                 color="blue"
                 ref={directionalLight}
-                intensity={1}
+                intensity={0.1}
                 position={[0, 6, 6]} />
 
 
@@ -91,7 +91,7 @@ function Enviro() {
             <Environment
 
             >
-                <Lightformer color="red" intensity={0.5} position={[-1, 0, 0]} rotation-y={Math.PI * 0.5} scale={20} />
+                <Lightformer color="red" intensity={1} position={[-1, 0, 0]} rotation-y={Math.PI * 0.5} scale={20} />
             </Environment>
 
 
@@ -99,10 +99,10 @@ function Enviro() {
 
 
 
-            <mesh rotation-x={-Math.PI * 0.5} scale-x={10} scale-y={50}  >
+            <mesh rotation-x={-Math.PI * 0.5} scale-x={10} scale-y={100}  >
 
                 <planeGeometry />
-                <meshStandardMaterial emissive="orange" emissiveIntensity={1} color="orange" />
+                <meshStandardMaterial emissive="black" emissiveIntensity={0.5} color="#800102" />
             </mesh>
 
             <Suspense fallback={<PlaceHolder position-y={1} scale={[1, 2, 1]} />} >
