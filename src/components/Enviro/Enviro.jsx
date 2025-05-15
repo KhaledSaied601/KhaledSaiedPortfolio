@@ -69,7 +69,7 @@ function Enviro() {
                     maxWidth={4}
                     textAlign="center"
                 >
-                    Khaled Saieds
+                    Khaled Saied
 
 
                 </Text>
