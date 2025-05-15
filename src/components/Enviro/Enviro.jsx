@@ -32,6 +32,8 @@ function Enviro() {
         gsap.to(ambientLight.current, { intensity: 1.5, duration: 5, ease: 'power2.inOut' })
     }, [])
 
+
+  
     useFrame((state, delta) => {
         if (shellRef.current) {
             shellRef.current.rotation.y += delta * 0.2
