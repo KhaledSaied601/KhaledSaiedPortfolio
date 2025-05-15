@@ -18,7 +18,7 @@ function Enviro() {
 
     // Create parametric shell geometry
     const generateShellGeometry = () => {
-        const geometry = new THREE.ParametricGeometry((u, v, target) => {
+        const geometry = new THREE.ParametricBufferGeometry((u, v, target) => {
             const x = Math.sin(Math.PI * 2 * u) * (2 + Math.cos(Math.PI * 2 * v))
             const y = Math.cos(Math.PI * 2 * u) * (2 + Math.cos(Math.PI * 2 * v))
             const z = Math.sin(Math.PI * 2 * v)
