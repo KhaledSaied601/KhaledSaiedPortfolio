@@ -99,10 +99,10 @@ function Enviro() {
 
 
 
-            <mesh rotation-x={-Math.PI * 0.5} scale-x={10} scale-y={50}  >
+            <mesh rotation-x={-Math.PI * 0.5} scale-x={10} scale-y={100}  >
 
                 <planeGeometry />
-                <meshStandardMaterial emissive="orange" emissiveIntensity={1} color="orange" />
+                <meshStandardMaterial emissive="red" emissiveIntensity={0.1} color="#6D1E01" />
             </mesh>
 
             <Suspense fallback={<PlaceHolder position-y={1} scale={[1, 2, 1]} />} >
