@@ -1,18 +1,16 @@
 import React, { Suspense, useEffect, useState } from 'react'
 import Style from './Enviro.module.css'
 import { Environment, Float, Lightformer, OrbitControls, Sparkles, Stars, Text } from '@react-three/drei';
-import { useFrame, useThree } from '@react-three/fiber';
 import Avatar from '../Avatar/Avatar';
 import gsap from 'gsap';
 import { useRef } from 'react';
 import PlaceHolder from '../PlaceHolder/PlaceHolder';
+import { useFrame } from '@react-three/fiber';
 import { Bloom, EffectComposer, ToneMapping } from '@react-three/postprocessing';
 import { ToneMappingMode } from 'postprocessing';
+import * as THREE from 'three';
 
 function Enviro() {
-
-  const THREE = useThree()
-  
     const directionalLight = useRef()
     const ambientLight = useRef()
     const sparkles = useRef()
@@ -20,7 +18,7 @@ function Enviro() {
 
     // Create parametric shell geometry
     const generateShellGeometry = () => {
-        const geometry = new THREE.BufferGeometry((u, v, target) => {
+        const geometry = new THREE.ParametricGeometry((u, v, target) => {
             const x = Math.sin(Math.PI * 2 * u) * (2 + Math.cos(Math.PI * 2 * v))
             const y = Math.cos(Math.PI * 2 * u) * (2 + Math.cos(Math.PI * 2 * v))
             const z = Math.sin(Math.PI * 2 * v)
@@ -40,8 +38,6 @@ function Enviro() {
             shellRef.current.rotation.z += delta * 0.1
         }
     })
-  
-
 
     return (
         <>
