@@ -44,8 +44,9 @@ function Avatar() {
         }, 3000)
 
 
-
-        gsap.to(camera.position, { z: 1.8, duration: 3, ease: 'power2.inOut' })
+        gsap.fromTo(camera.position,{z:10},{z: 1.8,y:1.4, duration: 3, ease: 'power2.inOut' })
+     
+      
 
         //Animate Hide of Label1
         gsap.to('.label1', { opacity: 0, delay: 3, duration: 3 })
@@ -62,8 +63,9 @@ function Avatar() {
 
         if (window.innerWidth < 750) {
 
-
-            gsap.to(camera.position, { z: 2.5, duration: 3, ease: 'power2.inOut' })
+           
+            gsap.fromTo(camera.position,{z:10},{z: 2.5, duration: 3, ease: 'power2.inOut' })
+           
             gsap.to('.label2', { fontSize: '12px' })
 
         }

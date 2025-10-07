@@ -8,6 +8,7 @@ import PlaceHolder from '../PlaceHolder/PlaceHolder';
 import { useFrame } from '@react-three/fiber';
 import { Bloom, EffectComposer, ToneMapping } from '@react-three/postprocessing';
 import { ToneMappingMode } from 'postprocessing';
+import Shell from '../Shell/Shell';
 
 function Enviro() {
 
@@ -48,7 +49,7 @@ function Enviro() {
 
                 color="blue"
                 ref={directionalLight}
-                intensity={0.1}
+                intensity={0.2}
                 position={[0, 6, 6]} />
 
 
@@ -99,17 +100,23 @@ function Enviro() {
 
 
 
-            <mesh rotation-x={-Math.PI * 0.5} scale-x={10} scale-y={100}  >
+            <mesh rotation-x={-Math.PI * 0.5}  scale-x={100} scale-y={100}  >
 
                 <planeGeometry />
-                <meshStandardMaterial emissive="black" emissiveIntensity={0.5} color="#800102" />
+                <meshStandardMaterial  color="#5F0303" />
             </mesh>
+
+     
 
             <Suspense fallback={<PlaceHolder position-y={1} scale={[1, 2, 1]} />} >
 
+                <Shell />
+              
                 <Avatar />
 
             </Suspense>
+
+        
 
         </>
     )
