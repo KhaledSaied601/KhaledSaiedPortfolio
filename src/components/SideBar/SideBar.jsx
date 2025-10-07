@@ -83,7 +83,7 @@ export function SideBar() {
                     )}
                 </IconButton>
 
-                <Drawer className="bg-gradient-to-t to-black from-orange-200 " open={isDrawerOpen} onClose={closeDrawer}>
+                <Drawer className="bg-black bg-opacity-95 backdrop-blur-lg" open={isDrawerOpen} onClose={closeDrawer}>
 
 
                     <Card
@@ -399,7 +399,7 @@ export function SideBar() {
 
 
 
-
+                                
 
 
 
