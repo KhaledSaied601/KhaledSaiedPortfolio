@@ -5,7 +5,8 @@ import gsap from 'gsap'
 import PlaceHolder from '../PlaceHolder/PlaceHolder'
 import { Bloom, EffectComposer, ToneMapping } from '@react-three/postprocessing'
 import { ToneMappingMode } from 'postprocessing'
-import Shell from '../Shell/Shell'
+import Buildling from '../Building/Building'
+import Crane from '../Crane/Crane'
 
 function Enviro() {
   const directionalLight = useRef()
@@ -17,16 +18,20 @@ function Enviro() {
     gsap.to(ambientLight.current, { intensity: 1.5, duration: 5, ease: 'power2.inOut' })
   }, [])
 
+
+
+
+  
   return (
     <>
-      {/* Deep cinematic fog */}
-      <fog attach="fog" args={['#0d001a', 2, 12]} />
+
 
       {/* Subtle bloom & tone mapping */}
       <EffectComposer>
         <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
         <Bloom mipmapBlur intensity={0.45} luminanceThreshold={1} />
       </EffectComposer>
+
 
       {/* Blue key light */}
       <directionalLight
@@ -63,23 +68,9 @@ function Enviro() {
         </Text>
       </Float>
 
-      {/* Subtle red glow environment */}
-      <Environment>
-        <Lightformer
-          color="#ff3b3b"
-          intensity={0.6}
-          position={[-1, 0, 0]}
-          rotation-y={Math.PI * 0.5}
-          scale={20}
-        />
-        <Lightformer
-          color="#0033ff"
-          intensity={0.4}
-          position={[1, 2, 2]}
-          rotation-y={-Math.PI * 0.5}
-          scale={20}
-        />
-      </Environment>
+
+     <Environment preset="city" />
+      
 
       {/* Gentle sparkles */}
       <Sparkles
@@ -93,21 +84,28 @@ function Enviro() {
         position-z={-0.1}
       />
 
-      {/* 🔴 Dark red floor */}
-      <mesh rotation-x={-Math.PI * 0.5} scale-x={25} scale-y={100}>
-        <planeGeometry />
-        <meshStandardMaterial
-          color="#3a0000"          // rich dark red
-          roughness={0.8}
-          metalness={0.1}
-        />
-      </mesh>
+    {/* 🌕 Dark yellow floor */}
+<mesh
+  rotation-x={-Math.PI * 0.5}
+  position-z={-20}
+  scale-x={40}
+  scale-y={500}
+>
+  <planeGeometry />
+  <meshStandardMaterial
+    color="#b8860b"   // dark golden yellow
+    roughness={0.8}
+    metalness={0.15}
+  />
+</mesh>
 
       {/* Models */}
       <Suspense fallback={<PlaceHolder position-y={1} scale={[1, 2, 1]} />}>
-        <Shell />
+        <Buildling />
+        <Crane />
         <Avatar />
       </Suspense>
+      
     </>
   )
 }

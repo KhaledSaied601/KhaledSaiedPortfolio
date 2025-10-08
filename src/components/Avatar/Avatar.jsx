@@ -44,7 +44,7 @@ function Avatar() {
         }, 3000)
 
 
-        gsap.fromTo(camera.position,{z:10},{z: 1.8,y:1.4, duration: 3, ease: 'power2.inOut' })
+        gsap.fromTo(camera.position,{z:5},{z: 1.8,y:1.5, duration: 3, ease: 'power2.inOut' })
      
       
 
@@ -64,7 +64,7 @@ function Avatar() {
         if (window.innerWidth < 750) {
 
            
-            gsap.fromTo(camera.position,{z:10},{z: 2.5, duration: 3, ease: 'power2.inOut' })
+            gsap.fromTo(camera.position,{z:5},{z: 2.5, duration: 3, ease: 'power2.inOut' })
            
             gsap.to('.label2', { fontSize: '12px' })
 
