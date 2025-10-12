@@ -1,3 +1,4 @@
+
 import React, { Suspense, useEffect, useRef } from 'react'
 import { Environment, Float, Lightformer, Sparkles, Text } from '@react-three/drei'
 import Avatar from '../Avatar/Avatar'
@@ -108,6 +109,7 @@ function Enviro() {
       
     </>
   )
+
 }
 
 export default Enviro
