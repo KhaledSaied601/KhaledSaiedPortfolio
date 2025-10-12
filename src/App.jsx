@@ -8,6 +8,7 @@ import RedSeaAmaalaMarina from './components/RedSeaAmaalaMarina/RedSeaAmaalaMari
 import RedSeaAirport from './components/RedSeaAirport/RedSeaAirport'
 import NavisworksAddin from './components/NavisworksAddin/NavisworksAddin'
 import GrasshopperScripts from './components/GrasshopperScripts/GrasshopperScripts'
+import QiddyaEntertainmentFacadeProject from './components/QiddyaEntertainmentFacadeProject/QiddyaEntertainmentFacadeProject'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
 
 
         { path: 'KhaledSaiedPortfolio', element: <Home /> },
+        { path: '/bimProjects/qiddyaEntertainmentFacade', element: <QiddyaEntertainmentFacadeProject /> },
         { path: '/bimProjects/exit10', element: <Exit10 /> },
         { path: '/bimProjects/rsAmaalaMarina', element: <RedSeaAmaalaMarina /> },
         { path: '/bimProjects/rsAirport', element: <RedSeaAirport /> },

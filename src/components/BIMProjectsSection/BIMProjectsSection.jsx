@@ -43,7 +43,7 @@ function BimProjectsSection() {
 
                     <div className='BIM-Head flex gap-2 mb-1 items-center'>
 
-                        <h3 className='text-purple-500 text-sm sm:text-lg'>BIM Projects  </h3>
+                        <h3 className='text-purple-500 text-sm sm:text-lg'>Acutual Projects  </h3>
                         <FontAwesomeIcon className='text-purple-500  w-3' icon={faArrowRight} />
                     </div>
 
@@ -53,9 +53,27 @@ function BimProjectsSection() {
 
                         <div className=" grid text-center  lg:grid-cols-3 lg:text-left text-black  gap-4">
 
+
+
+
+                            <Link
+                                to="/bimProjects/qiddyaEntertainmentFacade"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-200 after:to-yellow-200 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Qiddya/QiddyaFacade.jpg')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+
+                            >
+                                <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
+
+                                    <h2 className=" text-xl font-bold"> QIDDIYA ENTERTAINMENT CITY SOLID WASTE TRANSFER HUB</h2>
+                                    <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
+                                </div>
+                                <p className="m-0 max-w-[30ch] text-sm font-semibold">
+                                    Find in-depth information about it.
+                                </p>
+                            </Link>
+
                             <Link
                                 to="/bimProjects/exit10"
-                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-pink-500 after:to-purple-600 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Exit10/exit10.webp')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-pink-200 after:to-purple-200 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Exit10/exit10.webp')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
 
                             >
                                 <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
@@ -64,7 +82,7 @@ function BimProjectsSection() {
                                     <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
                                 </div>
                                 <p className="m-0 max-w-[30ch] text-sm font-semibold">
-                                    Find in-depth information about my works on EXIT 10.
+                                    Find in-depth information about it.
                                 </p>
                             </Link>
 
@@ -80,14 +98,14 @@ function BimProjectsSection() {
                                     <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
                                 </div>
                                 <p className="m-0 max-w-[30ch] text-sm font-semibold">
-                                    Find in-depth information about my works on Marina.
+                                    Find in-depth information about it.
                                 </p>
                             </Link>
 
 
                             <Link
                                 to="/bimProjects/rsAirport"
-                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tr after:opacity-25 after:from-yellow-400 after:to-orange-400 relative w-full h-52 min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/airport/DAN_Red-Sea-Airport_3.webp')]  bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-50 after:to-yellow-400 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4  bg-[url('./assets/images/airport/DAN_Red-Sea-Airport_3.webp')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
 
                             >
                                 <div className='flex flex-row gap-2 items-center lg:justify-between mb-3'>
@@ -96,7 +114,7 @@ function BimProjectsSection() {
                                     <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
                                 </div>
                                 <p className="m-0 max-w-[30ch] text-sm font-semibold">
-                                    Find in-depth information about my works on Airport.
+                                    Find in-depth information about it.
                                 </p>
                             </Link>
 
@@ -113,11 +131,13 @@ function BimProjectsSection() {
 
                         <h3 className='text-sm sm:text-lg text-white font-semibold mb-4'>Applications And Codes I've Created</h3>
 
-                        <div className="grid text-center   lg:text-left text-black  gap-4">
+                        <div className="grid text-center lg:grid-cols-1  lg:text-left text-black  gap-4">
 
-                            <Link
+
+{/* ////////////////////////////////////////////////////////////////// */}
+                            {/* <Link
                                 to="/bimDevelopments/navisworksAddin"
-                                className="bg-clip-padding bg-gradient-to-t lg:h-[206px] from-white to-blue-800  w-full  min-h-40 group rounded-lg border border-transparent px-5 py-4   bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-50 after:to-yellow-400 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden       bg-[url('./assets/images/TitanTurtle/TitanTurtle.png')]  "
 
                             >
                                 <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
@@ -127,44 +147,27 @@ function BimProjectsSection() {
                                 </div>
 
                                 <p className="m-0 max-w-[30ch] text-sm font-semibold">
-                                    Find in-depth information about my Code on Navisworks Add-In.
+                                    Find in-depth information about it.
+                                </p>
+                            </Link>  */}
+
+
+
+                        <Link
+                                to="/bimDevelopments/navisworksAddin"
+                                className="   bg-clip-padding bg-gradient-to-t lg:h-[206px] from-white to-blue-800  w-full  min-h-40 group rounded-lg border border-transparent px-5 py-4   bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+
+                            >
+                                <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
+
+                                    <h2 className=" text-xl font-bold">NAVISWORKS Add-In</h2>
+                                    <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
+                                </div>
+
+                                <p className="m-0 max-w-[30ch] text-sm font-semibold">
+                                    Find in-depth information about it.
                                 </p>
                             </Link>
-
-
-                            {/* <a
-                            href=""
-                            className="bg-clip-padding bg-gradient-to-b  from-white to-black  w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4   bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
-
-                        >
-                            <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
-
-                                <h2 className=" text-xl font-bold">REVIT API</h2>
-                                <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
-                            </div>
-
-                            <p className="m-0 max-w-[30ch] text-sm font-semibold">
-                                Find in-depth information about my Code on Revit API.
-                            </p>
-                        </a>
-
-
-                        <a
-                            href=""
-                            className="bg-clip-padding bg-gradient-to-tr  from-white via-blue-500 to-black  w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4   bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
-
-                        >
-                            <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
-
-                                <h2 className=" text-xl font-bold">TEKLA API</h2>
-                                <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
-                            </div>
-
-                            <p className="m-0 max-w-[30ch] text-sm font-semibold">
-                                Find in-depth information about my Code on Tekla API.
-                            </p>
-                        </a> */}
-
 
 
 

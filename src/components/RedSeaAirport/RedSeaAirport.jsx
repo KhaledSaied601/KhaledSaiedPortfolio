@@ -77,7 +77,7 @@ function RedSeaAirport() {
                             </div>
 
 
-                            <div className='image lg:w-1/2 lg:h-[600px] h-80 w-full  rounded-xl overflow-hidden relative 
+                            <div className='image lg:w-1/2 lg:h-fit h-80 w-full  rounded-xl overflow-hidden relative 
                      bg-clip-padding   border border-transparent  transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 group'>
                                 <div className='h-full w-full absolute bg-black bg-opacity-40 group-hover:bg-gray-600-500  group-hover:bg-opacity-10 duration-200 z-20'></div>
 
@@ -135,7 +135,7 @@ function RedSeaAirport() {
 
                         <div className='description flex flex-col items-start text-white '>
                             <h1 className='text-xl sm:text-3xl font-bold mb-5'>Families</h1>
-                            <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>To LOD 500<FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
+                            <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>To LOD 400<FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
                             <p className='text-sm sm:text-lg font-light'>One of the most interesting aspects of my role was upgrading and creating families to Level of Development (LOD) 500 according to vendor designs. You can now explore these detailed models in 3D and enjoy them in this portfolio.</p>
                         </div>
 

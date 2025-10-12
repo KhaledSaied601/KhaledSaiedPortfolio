@@ -67,7 +67,7 @@ function Exit10() {
                             </div>
 
 
-                            <div className='image lg:w-1/2 lg:h-[600px] h-80 w-full  rounded-xl overflow-hidden relative 
+                            <div className='image lg:w-1/2 lg:h-fit h-80 w-full  rounded-xl overflow-hidden relative 
                      bg-clip-padding   border border-transparent  transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 group'>
                                 <div className='h-full w-full absolute bg-black bg-opacity-40 group-hover:bg-gray-600-500  group-hover:bg-opacity-10 duration-200 z-20'></div>
 

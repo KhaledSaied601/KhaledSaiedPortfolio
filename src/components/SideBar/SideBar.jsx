@@ -171,6 +171,15 @@ export function SideBar() {
                                                 <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                             </ListItemPrefix>
 
+                                            <Link to='bimProjects/qiddyaEntertainmentFacade'>QIDDIYA SOLID WASTE TRANSFER HUB</Link>
+
+                                        </ListItem>
+
+                                        <ListItem className="text-white">
+                                            <ListItemPrefix >
+                                                <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                            </ListItemPrefix>
+
                                             <Link to='bimProjects/exit10'>EXT 10</Link>
 
                                         </ListItem>

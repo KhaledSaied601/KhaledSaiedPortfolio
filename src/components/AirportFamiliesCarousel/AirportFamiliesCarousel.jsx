@@ -18,7 +18,7 @@ import TL from '../../assets/images/airport/Fam/TieLadder.webp'
 import WI from '../../assets/images/airport/Fam/Window.webp'
 import CC from '../../assets/images/airport/Fam/CeilingConstruction.webp'
 import { Carousel } from '@material-tailwind/react'
-import { AirportFamilyItem } from '../AirportFamilyItem/AirportFamilyItem'
+import { ThreeDEngineeringElement } from '../ThreeDEngineeringElement/ThreeDEngineeringElement'
 import Model3D from '../Model3D/Model3D'
 
 
@@ -31,7 +31,7 @@ export function AirportFamiliesCarousel() {
 
 
 
-    const familiesElement = [
+    const threeDElements = [
         { image: RH, title: "Roof Hatch with Fixation", Has3D: true, modelPath: "/KhaledSaiedPortfolio/frag/Fam/roofHatch.frag" },
         { image: CF, title: "Curtain Wall Fixation", Has3D: true, modelPath: "/KhaledSaiedPortfolio/frag/Fam/CurtainFixation.frag" },
         { image: CC, title: "Ceiling Construction", Has3D: true, modelPath: "/KhaledSaiedPortfolio/frag/Fam/CeilingConstruction.frag" },
@@ -56,6 +56,7 @@ export function AirportFamiliesCarousel() {
             <Carousel
 
                 className="rounded-xl max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto"
+
                 navigation={({ setActiveIndex, activeIndex, length }) => (
                     <div className="absolute bottom-4 left-2/4 z-20 flex -translate-x-2/4 gap-2">
                         {new Array(length).fill("").map((_, i) => (
@@ -75,7 +76,7 @@ export function AirportFamiliesCarousel() {
 
 
 
-                {familiesElement.map((e, index) => <AirportFamilyItem key={index} image={e.image} title={e.title} Has3D={e.Has3D} modelPath={e.modelPath} setIs3DShowed={setIs3DShowed} setModelPath={setModelPath} />)}
+                {threeDElements.map((e, index) => <ThreeDEngineeringElement key={index} image={e.image} title={e.title} Has3D={e.Has3D} modelPath={e.modelPath} setIs3DShowed={setIs3DShowed} setModelPath={setModelPath} />)}
 
 
 
