@@ -4,8 +4,10 @@ import Style from './QiddyaFacadeCarousel.module.css'
 
 
 
-import FSS from '../../assets/images/Qiddya/FacadeStructuralSystem.png'
-import FAS from '../../assets/images/Qiddya/FacadeArchitecturalSystem.png'
+import RVTAS from '../../assets/images/Qiddya/FacadeArchitecturalSystem.png'
+import RHINOAS from '../../assets/images/Qiddya/RhinoFacadeGeo.png'
+import RHINOCSS from '../../assets/images/Qiddya/RhinoCurvesToBeBeams.png'
+import TSS from '../../assets/images/Qiddya/FacadeStructuralSystem.png'
 
 import { Carousel } from '@material-tailwind/react'
 import { ThreeDEngineeringElement } from '../ThreeDEngineeringElement/ThreeDEngineeringElement'
@@ -22,8 +24,10 @@ export function QiddyaFacadeCarousel() {
 
 
     const threeDElements = [
-        { image: FSS, title: "Facade's Stuctural System", Has3D: true, modelPath: "/KhaledSaiedPortfolio/frag/Projects/Qiddya/Qiddya.frag" },
-        { image: FAS, title: "Facade's Architectural System", Has3D: false },
+        { image: RVTAS, title: "Facade Architectural System on Revit", Has3D: false },
+        { image: RHINOAS, title: "I extracted Facade Geometry from Revit by Grasshopper using RhinoInside", Has3D: false },
+        { image: RHINOCSS, title: "Then i obtained Structural System Curves from the Facade Geometry according to the design", Has3D: false },
+        { image: TSS, title: "This allowed me to model those curves on Tekla Structures by Grasshopper using Tekla Live Link", Has3D: false },
      
 
     ]

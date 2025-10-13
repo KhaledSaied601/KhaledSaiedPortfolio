@@ -68,7 +68,7 @@ function QiddyaEntertainmentFacadeProject() {
 
 
                             <div className='description flex flex-col items-start text-white lg:w-1/2 w-full'>
-                                <h1 className='text-xl sm:text-3xl font-bold mb-5'>QIDDIYA ENTERTAINMENT CITY SOLID WASTE TRANSFER HUB</h1>
+                                <h1 className='text-xl sm:text-3xl font-bold mb-5'>CITY SOLID WASTE TRANSFER HUB</h1>
                                 <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>My role <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
                                 <p className='text-sm sm:text-lg font-light'>In this project, the client requested modeling over 15,000 structural beams forming the structural system for the façade within less than a week. To meet this challenging deadline efficiently, I decided to automate the process using Grasshopper. This approach proved to be the most accurate and time efficient solution, allowing me to complete the entire model in just two days according to the design requirements and the results performed perfectly.</p>
                             </div>
@@ -114,7 +114,6 @@ function QiddyaEntertainmentFacadeProject() {
 
                                      </iframe>
 
-                                     {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/YC1UOoJjocs?si=w3cF3eftPgbw8g8u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
 
                                </div>
                            </div>
@@ -144,7 +143,9 @@ function QiddyaEntertainmentFacadeProject() {
 
                         <div className='description flex flex-col items-start text-white '>
                             <h1 className='text-xl sm:text-3xl font-bold mb-5'>Discover</h1>
-                            <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>To LOD 300<FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
+                            <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>To LOD 300 <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
+                                <p className='text-sm sm:text-lg font-light'>Discover an in-depth overview of the workflow behind this project.</p>
+
                         </div>
 
                         <QiddyaFacadeCarousel />
