@@ -18,11 +18,11 @@ import { MarinaCoordinationItem } from '../MarinaCoordinationItem/MarinaCoordina
 
 const coordinationElements = [
 
-    { image: FBX, title: "Coordination of Steel elements with Architecture elements" },
-    { image: STR, title: "Coordination of Steel elements with Structure elements" },
+    { image: FBX, title: "Coordinate Steel elements with Architectural elements" },
+    { image: STR, title: "Coordinate Steel elements with Structural elements" },
     { image: FBXCT, title: "Create Clash Tests" },
-    { image: FBXGCWT, title: "Grouping Clash Tests using add-in i created" },
-    { image: GBXCTG, title: "Clash Test Groups" },
+    { image: FBXGCWT, title: "Grouping Clash Results using add-in that i've created" },
+    { image: GBXCTG, title: "Clash Result Groups" },
     { image: CI, title: "Creating Issues" },
     { image: CII, title: "Creating Issues" },
     { image: FBXCR, title: "Creating Reports" },

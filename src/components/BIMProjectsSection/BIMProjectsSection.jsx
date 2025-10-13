@@ -43,7 +43,7 @@ function BimProjectsSection() {
 
                     <div className='BIM-Head flex gap-2 mb-1 items-center'>
 
-                        <h3 className='text-purple-500 text-sm sm:text-lg'>Acutual Projects  </h3>
+                        <h3 className='text-purple-500 text-sm sm:text-lg'>Actual Projects </h3>
                         <FontAwesomeIcon className='text-purple-500  w-3' icon={faArrowRight} />
                     </div>
 
@@ -131,7 +131,7 @@ function BimProjectsSection() {
 
                         <h3 className='text-sm sm:text-lg text-white font-semibold mb-4'>Applications And Codes I've Created</h3>
 
-                        <div className="grid text-center lg:grid-cols-1  lg:text-left text-black  gap-4">
+                        <div className="grid text-center lg:grid-cols-1 lg:text-left text-black  gap-4">
 
 
 {/* ////////////////////////////////////////////////////////////////// */}

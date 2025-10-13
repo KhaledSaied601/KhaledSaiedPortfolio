@@ -99,7 +99,7 @@ function RedSeaAmaalaMarina() {
 
                             <div className='description flex flex-col items-start text-white '>
                                 <h1 className='text-xl sm:text-3xl font-bold mb-5'>Coordination</h1>
-                                <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>What i'm did in project <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
+                                <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>What I’ve done in the project <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
                                 <p className='text-sm sm:text-lg font-light'>I developed a Navisworks Add-in using C# to efficiently group clashes based on any specified conditions for elements. This innovation was driven by the challenge of managing a vast number of clash results and their analysis. The Add-in significantly streamlines the process, allowing for the grouping of any clash test according to desired element properties in just a few moments.</p>
                             </div>
 

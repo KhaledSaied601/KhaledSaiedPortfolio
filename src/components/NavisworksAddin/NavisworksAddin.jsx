@@ -61,14 +61,7 @@ function NavisworksAddin() {
 
 
 
-                            <div className=" aspect-video   mx-auto  w-full rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-white duration-500">
-
-                                <iframe width="100%" height="100%"
-                                    src="https://www.youtube.com/embed/Zo_cN0YFDQU?si=zI8xGqqTE-23p33a"
-                                    title="YouTube video player" frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                            </div>
+                        
 
 
 
@@ -80,6 +73,16 @@ function NavisworksAddin() {
 
                             </div>
 
+
+
+    <div className=" aspect-video   mx-auto  w-full rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-white duration-500">
+
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/Zo_cN0YFDQU?si=zI8xGqqTE-23p33a"
+                                    title="YouTube video player" frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                            </div>
                         </div>
 
                     </div>

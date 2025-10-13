@@ -89,7 +89,7 @@ function Exit10() {
 
                             <div className='description flex flex-col items-start text-white '>
                                 <h1 className='text-xl sm:text-3xl font-bold mb-5'>Sheets created for LOD500</h1>
-                                <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>What i'm did in the project <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
+                                <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>What I’ve done in the project <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
                                 <p className='text-sm sm:text-lg font-light'>I successfully created over 30 sheets for various buildings, including cinema, bridges, skylight, and more. These sheets encompassed plans, sections, and connection detailing, all meticulously crafted to meet the specified requirements. Below are examples of these sheets.</p>
                             </div>
 

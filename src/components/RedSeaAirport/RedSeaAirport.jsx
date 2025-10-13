@@ -73,7 +73,7 @@ function RedSeaAirport() {
                             <div className='description flex flex-col items-start text-white lg:w-1/2 w-full'>
                                 <h1 className='text-xl sm:text-3xl font-bold mb-5'>Red Sea Airport</h1>
                                 <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>My role <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
-                                <p className='text-sm sm:text-lg font-light'>In my role as the BIM Coordinator, I was responsible for creating my first Master Information Delivery Plan (MIDP). I actively participated in BIM meetings with various experts in the field, ensuring effective coordination and collaboration among all technical disciplines to achieve our project goals. One of the most exciting aspects of my role was developing all families to Level of Development (LOD) 500. Our scope included advancing the BIM model from LOD 300 to LOD 500, passing through the LOD 400 Fabrication Stage.</p>
+                                <p className='text-sm sm:text-lg font-light'>In my role as the BIM Coordinator, I was responsible for creating my first Task Information Delivery Plan (TIDP). I actively participated in BIM meetings with various experts in the field, ensuring effective coordination and collaboration among all technical disciplines to achieve our project goals. One of the most exciting aspects of my role was developing all families to Level of Development (LOD) 400. Our scope included advancing the BIM model from LOD 300 to LOD 400 Fabrication Stage.</p>
                             </div>
 
 
@@ -100,8 +100,8 @@ function RedSeaAirport() {
 
                             <div className='description flex flex-col items-start text-white '>
                                 <h1 className='text-xl sm:text-3xl font-bold mb-5'>Models</h1>
-                                <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>What i'm did in modeling <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
-                                <p className='text-sm sm:text-lg font-light'>I developed central models for all disciplines to collaborate effectively using work sharing. I utilized C# code to rename all families according to our project scope and ensured that all shared parameters were accurately filled. Additionally, I created structural openings in the structural models for MEP systems and wrote a C# code to automate the creation of openings in the architectural models for MEP. Furthermore, I developed all architectural families to Level of Development (LOD) 500, as detailed below.</p>
+                                <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>What I’ve done in the project  <FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
+                                <p className='text-sm sm:text-lg font-light'>I developed central models for all disciplines to collaborate effectively using work sharing. I utilized C# code to rename all families according to our project scope and ensured that all shared parameters were accurately filled. Additionally, I created structural openings in the structural models for MEP systems and wrote a C# code to automate the creation of openings in the architectural models for MEP. Furthermore, I developed all architectural families to Level of Development (LOD 400), as detailed below.</p>
                             </div>
 
 
@@ -136,7 +136,7 @@ function RedSeaAirport() {
                         <div className='description flex flex-col items-start text-white '>
                             <h1 className='text-xl sm:text-3xl font-bold mb-5'>Families</h1>
                             <h3 className='text-sm sm:text-xl font-semibold text-purple-500 mb-3'>To LOD 400<FontAwesomeIcon className=' w-4  transition-transform group-hover:translate-x-1 motion-reduce:transform-none inline-block' icon={faArrowRight} /> </h3>
-                            <p className='text-sm sm:text-lg font-light'>One of the most interesting aspects of my role was upgrading and creating families to Level of Development (LOD) 500 according to vendor designs. You can now explore these detailed models in 3D and enjoy them in this portfolio.</p>
+                            <p className='text-sm sm:text-lg font-light'>One of the most interesting aspects of my role was upgrading and creating families to Level of Development (LOD 400) according to vendor designs.</p>
                         </div>
 
                         <AirportFamiliesCarousel />
