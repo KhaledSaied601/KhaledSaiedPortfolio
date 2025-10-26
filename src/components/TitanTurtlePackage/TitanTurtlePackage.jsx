@@ -5,14 +5,13 @@ import { motion, useAnimation, useInView } from "framer-motion"
 
 import TT from '../../assets/images/TitanTurtle/TitanTurtle.png'
 import PC from '../../assets/images/TitanTurtle/Nodes.png'
-import ABP from '../../assets/images/TitanTurtle/AnchorBoltPattern.png'
-import PPP from '../../assets/images/TitanTurtle/PlateByPointsAndPlane.png'
+
 
 import { ImageModelItem } from '../ImageModelItem/ImageModelItem'
 import Style from './TitanTurtlePackage.module.css'
 
 function TitanTurtlePackage() {
-  const [is3DShowed, setIs3DShowed] = useState(false)
+
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
   const mainControls = useAnimation()
