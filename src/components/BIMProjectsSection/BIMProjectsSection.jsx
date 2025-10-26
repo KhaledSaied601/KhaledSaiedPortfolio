@@ -58,7 +58,7 @@ function BimProjectsSection() {
 
                             <Link
                                 to="/bimProjects/qiddyaEntertainmentFacade"
-                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-200 after:to-yellow-200 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Qiddya/QiddyaFacade.jpg')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-orange-700   after:to-yellow-200 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Qiddya/QiddyaFacade.jpg')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
 
                             >
                                 <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
@@ -73,7 +73,7 @@ function BimProjectsSection() {
 
                             <Link
                                 to="/bimProjects/exit10"
-                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-pink-200 after:to-purple-200 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Exit10/exit10.webp')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-pink-700 after:to-purple-200 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Exit10/exit10.webp')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
 
                             >
                                 <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
@@ -89,7 +89,7 @@ function BimProjectsSection() {
 
                             <Link
                                 to="/bimProjects/rsAmaalaMarina"
-                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tr after:opacity-25 after:from-cyan-400 after:to-blue-600 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Marina/Marina.webp')] bg-center bg-cover  transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tr after:opacity-25 after:to-cyan-400 after:from-blue-600 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Marina/Marina.webp')] bg-center bg-cover  transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
 
                             >
                                 <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
@@ -105,7 +105,7 @@ function BimProjectsSection() {
 
                             <Link
                                 to="/bimProjects/rsAirport"
-                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-50 after:to-yellow-400 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4  bg-[url('./assets/images/airport/DAN_Red-Sea-Airport_3.webp')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:bg-gray-800 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4  bg-[url('./assets/images/airport/DAN_Red-Sea-Airport_3.webp')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
 
                             >
                                 <div className='flex flex-row gap-2 items-center lg:justify-between mb-3'>
@@ -131,25 +131,25 @@ function BimProjectsSection() {
 
                         <h3 className='text-sm sm:text-lg text-white font-semibold mb-4'>Applications And Codes I've Created</h3>
 
-                        <div className="grid text-center lg:grid-cols-1 lg:text-left text-black  gap-4">
+                        <div className="grid text-center lg:grid-cols-2 lg:text-left text-black  gap-4">
 
 
 {/* ////////////////////////////////////////////////////////////////// */}
-                            {/* <Link
-                                to="/bimDevelopments/navisworksAddin"
-                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-50 after:to-yellow-400 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden       bg-[url('./assets/images/TitanTurtle/TitanTurtle.png')]  "
+                            <Link
+                                to="/bimDevelopments/titanTurtlePackage"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-gray-900 after:to-green-400 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden       bg-[url('./assets/images/TitanTurtle/TitanTurtle2.png')]  "
 
                             >
                                 <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
 
-                                    <h2 className=" text-xl font-bold">NAVISWORKS Add-In</h2>
+                                    <h2 className=" text-xl font-bold">TitanTurtle</h2>
                                     <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
                                 </div>
 
                                 <p className="m-0 max-w-[30ch] text-sm font-semibold">
                                     Find in-depth information about it.
                                 </p>
-                            </Link>  */}
+                            </Link> 
 
 
 

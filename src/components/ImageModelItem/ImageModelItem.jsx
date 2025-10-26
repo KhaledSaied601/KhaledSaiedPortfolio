@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import Style from './Exit10SheetItem.module.css'
+import Style from './ImageModelItem.module.css'
 
 
 
-export function Exit10SheetItem({ image, title }) {
+export function ImageModelItem({ image, title }) {
 
 
 
@@ -14,7 +14,7 @@ export function Exit10SheetItem({ image, title }) {
         <>
 
 
-            <div className="flex flex-col items-center justify-center gap-3 pb-10">
+            <div className="flex w-full flex-col items-center justify-center gap-3 pb-10  ">
 
                 <div className="h-[400px] md:h-[500px] w-full rounded-xl overflow-hidden relative">
 
@@ -24,7 +24,7 @@ export function Exit10SheetItem({ image, title }) {
                         src={image}
                         alt={title}
        
-                        className='w-full h-full object-contain'
+                        className='w-full h-full object-contain  overflow-hidden shadow-lg hover:scale-110 hover:shadow-white duration-500'
                         
                     />
 

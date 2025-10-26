@@ -9,6 +9,7 @@ import RedSeaAirport from './components/RedSeaAirport/RedSeaAirport'
 import NavisworksAddin from './components/NavisworksAddin/NavisworksAddin'
 import GrasshopperScripts from './components/GrasshopperScripts/GrasshopperScripts'
 import QiddyaEntertainmentFacadeProject from './components/QiddyaEntertainmentFacadeProject/QiddyaEntertainmentFacadeProject'
+import TitanTurtlePackage from './components/TitanTurtlePackage/TitanTurtlePackage'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         { path: '/bimProjects/rsAmaalaMarina', element: <RedSeaAmaalaMarina /> },
         { path: '/bimProjects/rsAirport', element: <RedSeaAirport /> },
         { path: '/bimDevelopments/navisworksAddin', element: <NavisworksAddin /> },
+        { path: '/bimDevelopments/titanTurtlePackage', element: <TitanTurtlePackage /> },
         { path: '/computationalDesign/grasshopperScripts', element: <GrasshopperScripts /> },
 
       ]

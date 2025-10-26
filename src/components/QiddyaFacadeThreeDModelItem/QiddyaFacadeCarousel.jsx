@@ -12,6 +12,7 @@ import TSS from '../../assets/images/Qiddya/FacadeStructuralSystem.png'
 import { Carousel } from '@material-tailwind/react'
 import { ThreeDEngineeringElement } from '../ThreeDEngineeringElement/ThreeDEngineeringElement'
 import Model3D from '../Model3D/Model3D'
+import { ImageModelItem } from '../ImageModelItem/ImageModelItem'
 
 
 
@@ -61,7 +62,7 @@ export function QiddyaFacadeCarousel() {
 
 
 
-                {threeDElements.map((e, index) => <ThreeDEngineeringElement key={index} image={e.image} title={e.title} Has3D={e.Has3D} modelPath={e.modelPath} setIs3DShowed={setIs3DShowed} setModelPath={setModelPath} />)}
+                {threeDElements.map((e, index) => <ImageModelItem key={index} image={e.image} title={e.title}  />)}
 
 
 
@@ -75,7 +76,6 @@ export function QiddyaFacadeCarousel() {
             </Carousel>
 
 
-            {is3DShowed ? <Model3D model={modelPath} setModelPath={setModelPath} setIsShowed={setIs3DShowed} /> : null}
         </div>
 
     );

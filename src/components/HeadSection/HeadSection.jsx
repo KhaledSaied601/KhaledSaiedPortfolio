@@ -1,66 +1,63 @@
 import React, { useEffect, useState } from 'react'
-import Style from './HeadSection.module.css'
-import $ from 'jquery'
 import { Canvas } from '@react-three/fiber'
-import Avatar from '../Avatar/Avatar'
 import Enviro from '../Enviro/Enviro'
 
-
 function HeadSection() {
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024)
 
-    useEffect(() => {
+  useEffect(() => {
+    const handleResize = () => setIsLargeScreen(window.innerWidth >= 1024)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
+  return (
+    <section
+      id="home"
+      className="flex flex-col lg:flex-row items-center justify-between 
+                 w-full max-w-screen-xl mx-auto px-6 pt-10 pb-20gap-10"
+    >
+      {/* ---------- LEFT TEXT CONTENT ---------- */}
+      <div className="flex-1 text-white text-center lg:text-left">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">Khaled Saied</h1>
+        <h3 className="text-lg sm:text-xl font-semibold text-purple-400 mb-4">
+          BIM Coordinator
+        </h3>
 
-
-        Array.from(document.querySelectorAll('.slice-1,.slice-2,.slice-3,.slice-4,.head-content')).forEach((e) => {
-            e.classList.add('left-0');
-            e.classList.remove('left-[100%]');
-        })
-
-        document.querySelector('.head-section')?.classList.add('border-opacity-45')
-        document.querySelector('.head-section')?.classList.remove('border-opacity-0')
-
-
-
-
-
-
-    }, [])
-
-
-
-    return (
-        <>
-
-
-            <Canvas id='home' camera={{ position: [0, 1.4, 5] }} style={{ position: 'relative', zIndex: 10, top: 0, left: 0, width: '100%', height: '100vh' }}   >
-                <Enviro />
-    
-
-            </Canvas>
+        <p className="text-sm sm:text-base font-light leading-relaxed text-gray-300 mb-3">
+I’m a BIM Coordinator and Computational Engineer focused on coordination, workflow automation, and improving collaboration across disciplines.        </p>
 
 
+      </div>
 
-            {/* 
-            <div className='head-section bg-[url("./assets/images/cover.webp")]   bg-center bg-fixed flex items-center justify-start bg-contain bg-no-repeat    md:bg-cover  h-screen head-section w-full mb-32  mx-auto border-s border-gray-500 border-opacity-0 border-dotted delay-400 duration-200  relative ' id='home'>
-
-
-                <div className=' w-full h-full absolute top-0 left-0 bg-black bg-opacity-75'></div>
-
-                <div className='head-title max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl text-white  text-opacity-85 mx-auto  w-full overflow-hidden  '>
-                    <h1 className='text-3xl sm:text-5xl font-bold my-3 head-content delay-200 duration-200 relative left-[100%]'>Khaled Saied</h1>
-                    <h3 className='text-lg sm:text-xl font-semibold my-3 head-content delay-200 duration-200 relative left-[100%]'>BIM Coordinator</h3>
-                </div>
-
-            </div> */}
-
-
-
-
-
-        </>
-    )
+      {/* ---------- RIGHT 3D CARD ---------- */}
+      <div
+        className="flex-1 w-full max-w-md lg:max-w-lg rounded-2xl overflow-hidden 
+                   border border-gray-600/30 shadow-xl bg-gradient-to-br 
+                   from-gray-900/60 to-black/70 backdrop-blur-sm relative 
+                   transition-all duration-500"
+        style={{
+          height: isLargeScreen
+            ? 'clamp(500px, 65vh, 900px)' // ✅ Taller for large screens and up
+            : 'clamp(250px, 40vh, 700px)', // ✅ Normal height for small/medium screens
+        }}
+      >
+        <Canvas
+          camera={{ position: [0, 1.4, 5] }}
+          style={{
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <Enviro />
+        </Canvas>
+      </div>
+    </section>
+  )
 }
 
 export default HeadSection

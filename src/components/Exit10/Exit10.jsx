@@ -38,7 +38,7 @@ function Exit10() {
     return (
         <>
 
-            <div ref={ref} className='max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl mx-auto '>
+    <div ref={ref} className="my-14 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
 
 
 

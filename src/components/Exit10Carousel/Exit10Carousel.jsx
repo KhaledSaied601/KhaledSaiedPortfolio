@@ -12,7 +12,7 @@ import ABD from "../../assets/images/Exit10/EkartABDetails.webp"
 import ABP from "../../assets/images/Exit10/EkartABPlans.webp"
 import EPD from "../../assets/images/Exit10/EkartEPDetails.webp"
 import EPP from "../../assets/images/Exit10/EkartEPPlans.webp"
-import { Exit10SheetItem } from '../Exit10SheetItem/Exit10SheetItem';
+import { ImageModelItem } from '../ImageModelItem/ImageModelItem';
 
 
 
@@ -59,7 +59,7 @@ export function Exit10Carousel() {
     
 
 
-            {sheetElements.map((e, index) => <Exit10SheetItem key={index} image={e.image} title={e.title} />)}
+            {sheetElements.map((e, index) => <ImageModelItem key={index} image={e.image} title={e.title} />)}
 
 
 

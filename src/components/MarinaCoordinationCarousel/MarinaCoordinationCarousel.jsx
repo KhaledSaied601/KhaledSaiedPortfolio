@@ -11,7 +11,7 @@ import CI from '../../assets/images/Marina/CreatingIssuesBIM360.webp'
 import CII from '../../assets/images/Marina/CreatingIssuesBIM360_2.webp'
 import FBXCR from '../../assets/images/Marina/FBXClashReports.webp'
 import { Carousel } from '@material-tailwind/react'
-import { MarinaCoordinationItem } from '../MarinaCoordinationItem/MarinaCoordinationItem'
+import { ImageModelItem } from '../ImageModelItem/ImageModelItem'
 
 
 
@@ -66,7 +66,7 @@ export function MarinaCoordinationCarousel() {
 
 
 
-                {coordinationElements.map((e, index) => <MarinaCoordinationItem key={index} image={e.image} title={e.title} />)}
+                {coordinationElements.map((e, index) => <ImageModelItem key={index} image={e.image} title={e.title} />)}
 
 
 
