@@ -10,6 +10,7 @@ import NavisworksAddin from './components/NavisworksAddin/NavisworksAddin'
 import GrasshopperScripts from './components/GrasshopperScripts/GrasshopperScripts'
 import QiddyaEntertainmentFacadeProject from './components/QiddyaEntertainmentFacadeProject/QiddyaEntertainmentFacadeProject'
 import TitanTurtlePackage from './components/TitanTurtlePackage/TitanTurtlePackage'
+import ZoodTowersProject from './components/ZoodTowersProject/ZoodTowersProject'
 
 function App() {
 
@@ -21,9 +22,10 @@ function App() {
 
 
         { path: 'KhaledSaiedPortfolio', element: <Home /> },
-        { path: '/bimProjects/qiddyaEntertainmentFacade', element: <QiddyaEntertainmentFacadeProject /> },
         { path: '/bimProjects/exit10', element: <Exit10 /> },
         { path: '/bimProjects/rsAmaalaMarina', element: <RedSeaAmaalaMarina /> },
+        { path: '/computationalProjects/qiddyaEntertainmentFacade', element: <QiddyaEntertainmentFacadeProject /> },
+        { path: '/computationalProjects/zoodTowers', element: <ZoodTowersProject /> },
         { path: '/bimProjects/rsAirport', element: <RedSeaAirport /> },
         { path: '/bimDevelopments/navisworksAddin', element: <NavisworksAddin /> },
         { path: '/bimDevelopments/titanTurtlePackage', element: <TitanTurtlePackage /> },

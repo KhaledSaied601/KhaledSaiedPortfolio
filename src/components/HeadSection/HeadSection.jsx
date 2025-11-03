@@ -29,7 +29,7 @@ function HeadSection() {
         </h3>
 
         <p className="text-sm sm:text-base font-light leading-relaxed text-gray-300 mb-3">
-I’m a BIM Coordinator and Computational Engineer focused on coordination, workflow automation, and improving collaboration across disciplines.        </p>
+I’m a BIM Coordinator and Computational Engineer focus on coordination, workflow automation, and improving collaboration across disciplines.        </p>
 
 
       </div>

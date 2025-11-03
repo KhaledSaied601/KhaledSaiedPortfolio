@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { motion, useAnimation, useInView } from "framer-motion"
 
-import TT from '../../assets/images/TitanTurtle/TitanTurtle.png'
-import PC from '../../assets/images/TitanTurtle/Nodes.png'
+import TT from '../../assets/images/TitanTurtle/TitanTurtle.webp'
+import PC from '../../assets/images/TitanTurtle/Nodes.webp'
 
 
 import { ImageModelItem } from '../ImageModelItem/ImageModelItem'

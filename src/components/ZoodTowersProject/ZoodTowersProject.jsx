@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { motion, useAnimation, useInView } from "framer-motion"
 
-import QI from '../../assets/images/Qiddya/QiddyaFacade.webp'
-import { QiddyaFacadeCarousel } from '../QiddyaFacadeModelItem/QiddyaFacadeCarousel'
+import ZT from '../../assets/images/Zood/RenderedZood2.webp'
+import { ZoodCarousel } from '../ZoodModelItem/ZoodCarousel'
 
-function QiddyaEntertainmentFacadeProject() {
+function ZoodTowersProject() {
   const [is3DShowed, setIs3DShowed] = useState(false)
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
@@ -38,7 +38,7 @@ function QiddyaEntertainmentFacadeProject() {
           {/* Text */}
           <div className="description flex flex-col items-start lg:w-1/2 w-full">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-5">
-              SOLID WASTE TRANSFER HUB
+              ZOOD TOWERS
             </h1>
             <h3 className="text-base sm:text-lg md:text-xl font-semibold text-purple-500 mb-3">
               My role{" "}
@@ -48,10 +48,7 @@ function QiddyaEntertainmentFacadeProject() {
               />
             </h3>
             <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
-              In this project, the client requested modeling over 15,000 structural beams forming
-              the façade’s structural system within less than a week. To meet this challenging
-              deadline, I automated the process using Grasshopper completing the entire model in
-              just two days with perfect accuracy and efficiency.
+              In this project, My role is to go through the Detailed Design stage until reaching the Issue for Construction stage LOD(300).
             </p>
           </div>
 
@@ -60,49 +57,44 @@ function QiddyaEntertainmentFacadeProject() {
             <div className="absolute inset-0 bg-black/40 group-hover:bg-gray-600/10 duration-300 z-10 rounded-2xl"></div>
             <img
               className="w-full h-full object-cover rounded-2xl"
-              src={QI}
-              alt="Qiddya Facade"
+              src={ZT}
+              alt="Zood Towers Rendered"
             />
           </div>
         </div>
-
-        {/* -------------------- WORKFLOW SECTION -------------------- */}
-        <div className="flex flex-col items-center text-white my-10 min-h-[70vh]">
-          <div className="w-full flex flex-col justify-center items-start gap-7">
-            <div className="mb-10">
-              <div className="description flex flex-col items-start w-full">
-                <h3 className="text-base sm:text-lg md:text-xl font-semibold text-purple-500 mb-3">
-                  Workflow{" "}
-                  <FontAwesomeIcon
-                    className="w-4 inline-block transition-transform group-hover:translate-x-1 duration-300"
-                    icon={faArrowRight}
-                  />
-                </h3>
-                <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                  Grasshopper is well known for its integration with Revit and Tekla Structures. In
-                  this project, I extracted the façade geometry from Revit and manipulated it in
-                  Grasshopper and Rhino according to design specifications. The workflow enabled me
-                  to finalize the Tekla Structures model with precision and speed, allowing the
-                  detailing team to proceed seamlessly with fabrication and connections.
-                </p>
-              </div>
-
-              <div className="aspect-video mt-6 w-full rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-white duration-500">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/YC1UOoJjocs?si=w3cF3eftPgbw8g8u"
-                  title="Qiddya Facade Workflow"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
+       {/* -------------------- WORKFLOW SECTION -------------------- */}
+           <div className="flex flex-col items-center text-white my-10 min-h-[70vh]">
+             <div className="w-full flex flex-col justify-center items-start gap-7">
+               <div className="mb-10">
+                 <div className="description flex flex-col items-start w-full">
+                   <h3 className="text-base sm:text-lg md:text-xl font-semibold text-purple-500 mb-3">
+                     Workflow{" "}
+                     <FontAwesomeIcon
+                       className="w-4 inline-block transition-transform group-hover:translate-x-1 duration-300"
+                       icon={faArrowRight}
+                     />
+                   </h3>
+                   <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
+                     I received a Rhino model and CAD files to reach the required level of detail. I converted the Rhino model including floors and façade systems into Revit, linked the CAD files, and began modeling the interior elements for the four towers.
+                   </p>
+                 </div>
+   
+                 <div className="aspect-video mt-6 w-full rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-white duration-500">
+                   <iframe
+                     width="100%"
+                     height="100%"
+                     src="https://www.youtube.com/embed/p0dYwceVMKM?si=t91qsYxjSit6Ly2W"
+                     title="ZOOD Workflow"
+                     frameBorder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerPolicy="strict-origin-when-cross-origin"
+                     allowFullScreen
+                     className="w-full h-full"
+                   ></iframe>
+                 </div>
+               </div>
+             </div>
+           </div>
 
         {/* -------------------- DISCOVER SECTION -------------------- */}
         <div className="flex flex-col items-center justify-between text-white my-10 min-h-[70vh]">
@@ -117,11 +109,11 @@ function QiddyaEntertainmentFacadeProject() {
                 />
               </h3>
               <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                Discover an in-depth overview of the workflow behind this project.
+                Some examples from the project are shown below.
               </p>
             </div>
 
-            <QiddyaFacadeCarousel />
+            <ZoodCarousel />
           </div>
         </div>
       </motion.div>
@@ -129,4 +121,4 @@ function QiddyaEntertainmentFacadeProject() {
   )
 }
 
-export default QiddyaEntertainmentFacadeProject
+export default ZoodTowersProject

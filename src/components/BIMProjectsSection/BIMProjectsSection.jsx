@@ -41,35 +41,22 @@ function BimProjectsSection() {
                     transition={{ duration: 1, delay: 0.25 }}
                 >
 
-                    <div className='BIM-Head flex gap-2 mb-1 items-center'>
+                    <div className='Projects-Head flex gap-2 mb-1 items-center'>
 
-                        <h3 className='text-purple-500 text-sm sm:text-lg'>Actual Projects </h3>
+                        <h3 className='text-purple-500 text-sm sm:text-lg'>Projects </h3>
                         <FontAwesomeIcon className='text-purple-500  w-3' icon={faArrowRight} />
                     </div>
 
                     <div className="BIM-projects-worked-on">
 
-                        <h3 className='text-sm sm:text-lg text-white font-semibold mb-4'>Projects I've Worked On</h3>
+                        <h3 className='text-sm sm:text-lg text-white font-semibold mb-4'>BIM Projects I've Worked On</h3>
 
                         <div className=" grid text-center  lg:grid-cols-3 lg:text-left text-black  gap-4">
 
 
 
 
-                            <Link
-                                to="/bimProjects/qiddyaEntertainmentFacade"
-                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-orange-700   after:to-yellow-200 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Qiddya/QiddyaFacade.jpg')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
-
-                            >
-                                <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
-
-                                    <h2 className=" text-xl font-bold"> QIDDIYA ENTERTAINMENT CITY SOLID WASTE TRANSFER HUB</h2>
-                                    <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
-                                </div>
-                                <p className="m-0 max-w-[30ch] text-sm font-semibold">
-                                    Find in-depth information about it.
-                                </p>
-                            </Link>
+                 
 
                             <Link
                                 to="/bimProjects/exit10"
@@ -125,6 +112,52 @@ function BimProjectsSection() {
                     </div>
 
 
+                   <div className="Freelance-projects-worked-on mt-5">
+
+                        <h3 className='text-sm sm:text-lg text-white font-semibold mb-4'>Freelance Projects I've Worked On</h3>
+
+                        <div className=" grid text-center  lg:grid-cols-3 lg:text-left text-black  gap-4">
+
+
+
+
+                            <Link
+                                to="/computationalProjects/qiddyaEntertainmentFacade"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-orange-700   after:to-yellow-200 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Qiddya/QiddyaFacade.webp')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+
+                            >
+                                <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
+
+                                    <h2 className=" text-xl font-bold"> QIDDIYA ENTERTAINMENT CITY SOLID WASTE TRANSFER HUB</h2>
+                                    <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
+                                </div>
+                                <p className="m-0 max-w-[30ch] text-sm font-semibold">
+                                    Find in-depth information about it.
+                                </p>
+                            </Link>
+
+                            <Link
+                                to="/computationalProjects/zoodTowers"
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-700   after:to-gray-900 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4 bg-[url('./assets/images/Zood/RenderedZood.webp')]    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden"
+
+                            >
+                                <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>
+
+                                    <h2 className=" text-xl font-bold"> ZOOD TOWERS</h2>
+                                    <FontAwesomeIcon className=' w-5  transition-transform group-hover:translate-x-1 motion-reduce:transform-none' icon={faArrowRight} />
+                                </div>
+                                <p className="m-0 max-w-[30ch] text-sm font-semibold">
+                                    Find in-depth information about it.
+                                </p>
+                            </Link>
+
+                   
+
+
+
+                        </div>
+
+                    </div>
 
 
                     <div className="BIM-development mt-10">
@@ -137,7 +170,7 @@ function BimProjectsSection() {
 {/* ////////////////////////////////////////////////////////////////// */}
                             <Link
                                 to="/bimDevelopments/titanTurtlePackage"
-                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-gray-900 after:to-green-400 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden       bg-[url('./assets/images/TitanTurtle/TitanTurtle2.png')]  "
+                                className=" after:absolute bg-clip-padding after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-tl after:opacity-25 after:from-blue-gray-900 after:to-green-400 relative w-full h-full min-h-40 group rounded-lg border border-transparent px-5 py-4    bg-cover bg-center transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 overflow-hidden       bg-[url('./assets/images/TitanTurtle/TitanTurtle2.webp')]  "
 
                             >
                                 <div className='flex flex-row gap-2 items-center mb-3 lg:justify-between'>

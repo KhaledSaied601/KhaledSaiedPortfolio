@@ -14,6 +14,7 @@ import {
 } from "@material-tailwind/react";
 import {
     PresentationChartBarIcon,
+    BuildingOffice2Icon,
     BuildingOfficeIcon,
     CubeTransparentIcon,
     GlobeAltIcon,
@@ -102,7 +103,7 @@ export function SideBar() {
                                         className="border-b-0 p-3 text-white"
                                     >
                                         <ListItemPrefix>
-                                            <BuildingOfficeIcon className="h-5 w-5" />
+                                            <BuildingOffice2Icon className="h-5 w-5" />
                                         </ListItemPrefix>
                                         <Typography className="mr-auto font-normal">BIM Projects</Typography>
                                     </AccordionHeader>
@@ -110,37 +111,41 @@ export function SideBar() {
 
                                 <AccordionBody className="py-1">
                                     <List className="p-0 text-white">
-                                        <ListItem>
-                                            <ListItemPrefix>
-                                                <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
-                                            </ListItemPrefix>
-                                            <Link to="bimProjects/qiddyaEntertainmentFacade">
-                                                QIDDIYA SOLID WASTE TRANSFER HUB
-                                            </Link>
-                                        </ListItem>
+                                       
                                         <ListItem>
                                             <ListItemPrefix>
                                                 <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                             </ListItemPrefix>
                                             <Link to="bimProjects/exit10">EXT 10</Link>
                                         </ListItem>
+
                                         <ListItem>
                                             <ListItemPrefix>
                                                 <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                             </ListItemPrefix>
                                             <Link to="bimProjects/rsAmaalaMarina">Red Sea Amaala Marina</Link>
                                         </ListItem>
+
                                         <ListItem>
                                             <ListItemPrefix>
                                                 <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
                                             </ListItemPrefix>
                                             <Link to="bimProjects/rsAirport">Red Sea Airport</Link>
                                         </ListItem>
+
+
+
                                     </List>
                                 </AccordionBody>
+
+
                             </Accordion>
 
-                            {/* Development */}
+
+
+
+
+                     {/* Freelance */}
                             <Accordion
                                 open={open === 2}
                                 icon={
@@ -155,6 +160,115 @@ export function SideBar() {
                                 <ListItem className="p-0" selected={open === 2}>
                                     <AccordionHeader
                                         onClick={() => handleOpen(2)}
+                                        className="border-b-0 p-3 text-white"
+                                    >
+                                        <ListItemPrefix>
+                                            <BuildingOfficeIcon className="h-5 w-5" />
+                                        </ListItemPrefix>
+                                        <Typography className="mr-auto font-normal">Freelance Projects</Typography>
+                                    </AccordionHeader>
+                                </ListItem>
+                                <AccordionBody className="py-1">
+                               
+                                    <List className="p-0 text-white">
+
+                                        <ListItem>
+                                            <ListItemPrefix>
+                                                <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                            </ListItemPrefix>
+                                            <Link to="computationalProjects/qiddyaEntertainmentFacade">
+                                                QIDDIYA SOLID WASTE TRANSFER HUB
+                                            </Link>
+                                        </ListItem>
+
+                                       <ListItem>
+                                            <ListItemPrefix>
+                                                <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                            </ListItemPrefix>
+                                            <Link to="computationalProjects/zoodTowers">
+                                                ZOOD TOWERS
+                                            </Link>
+                                        </ListItem>
+
+                                    </List>
+                                </AccordionBody>
+                            </Accordion>
+
+
+
+
+                           {/* Computational */}
+                            <Accordion
+                                open={open === 3}
+                                icon={
+                                    <ChevronDownIcon
+                                        strokeWidth={2.5}
+                                        className={`mx-auto h-4 w-4 transition-transform ${
+                                            open === 3 ? "rotate-180" : ""
+                                        }`}
+                                    />
+                                }
+                            >
+                                <ListItem className="p-0" selected={open === 3}>
+                                    <AccordionHeader
+                                        onClick={() => handleOpen(3)}
+                                        className="border-b-0 p-3 text-white"
+                                    >
+                                        <ListItemPrefix>
+                                            <CubeTransparentIcon className="h-5 w-5" />
+                                        </ListItemPrefix>
+                                        <Typography className="mr-auto font-normal">Computational</Typography>
+                                    </AccordionHeader>
+                                </ListItem>
+                                <AccordionBody className="py-1">
+                               
+                                    <List className="p-0 text-white">
+
+                                        <ListItem>
+                                            <ListItemPrefix>
+                                                <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                            </ListItemPrefix>
+                                            <Link to="computationalProjects/qiddyaEntertainmentFacade">
+                                                QIDDIYA SOLID WASTE TRANSFER HUB
+                                            </Link>
+                                        </ListItem>
+
+                                       <ListItem>
+                                            <ListItemPrefix>
+                                                <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                            </ListItemPrefix>
+                                            <Link to="computationalProjects/zoodTowers">
+                                                ZOOD TOWERS
+                                            </Link>
+                                        </ListItem>
+
+                                        <ListItem>
+                                            <ListItemPrefix>
+                                                <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
+                                            </ListItemPrefix>
+                                            <Link to="computationalDesign/grasshopperScripts">Grasshopper Case Studies</Link>
+                                        </ListItem>
+                                    </List>
+                                </AccordionBody>
+                            </Accordion>
+
+
+
+                            {/* Development */}
+                            <Accordion
+                                open={open === 5}
+                                icon={
+                                    <ChevronDownIcon
+                                        strokeWidth={2.5}
+                                        className={`mx-auto h-4 w-4 transition-transform ${
+                                            open === 5 ? "rotate-180" : ""
+                                        }`}
+                                    />
+                                }
+                            >
+                                <ListItem className="p-0" selected={open === 5}>
+                                    <AccordionHeader
+                                        onClick={() => handleOpen(5)}
                                         className="border-b-0 p-3 text-white"
                                     >
                                         <ListItemPrefix>
@@ -182,56 +296,23 @@ export function SideBar() {
                                 </AccordionBody>
                             </Accordion>
 
-                            {/* Computational */}
-                            <Accordion
-                                open={open === 3}
-                                icon={
-                                    <ChevronDownIcon
-                                        strokeWidth={2.5}
-                                        className={`mx-auto h-4 w-4 transition-transform ${
-                                            open === 3 ? "rotate-180" : ""
-                                        }`}
-                                    />
-                                }
-                            >
-                                <ListItem className="p-0" selected={open === 3}>
-                                    <AccordionHeader
-                                        onClick={() => handleOpen(3)}
-                                        className="border-b-0 p-3 text-white"
-                                    >
-                                        <ListItemPrefix>
-                                            <CubeTransparentIcon className="h-5 w-5" />
-                                        </ListItemPrefix>
-                                        <Typography className="mr-auto font-normal">Computational</Typography>
-                                    </AccordionHeader>
-                                </ListItem>
-                                <AccordionBody className="py-1">
-                                    <List className="p-0 text-white">
-                                        <ListItem>
-                                            <ListItemPrefix>
-                                                <ChevronRightIcon strokeWidth={3} className="h-3 w-5" />
-                                            </ListItemPrefix>
-                                            <Link to="computationalDesign/grasshopperScripts">Grasshopper</Link>
-                                        </ListItem>
-                                    </List>
-                                </AccordionBody>
-                            </Accordion>
+             
 
                             {/* Web Projects */}
                             <Accordion
-                                open={open === 4}
+                                open={open === 6}
                                 icon={
                                     <ChevronDownIcon
                                         strokeWidth={2.5}
                                         className={`mx-auto h-4 w-4 transition-transform ${
-                                            open === 4 ? "rotate-180" : ""
+                                            open === 6 ? "rotate-180" : ""
                                         }`}
                                     />
                                 }
                             >
-                                <ListItem className="p-0" selected={open === 4}>
+                                <ListItem className="p-0" selected={open === 6}>
                                     <AccordionHeader
-                                        onClick={() => handleOpen(4)}
+                                        onClick={() => handleOpen(6)}
                                         className="border-b-0 p-3 text-white"
                                     >
                                         <ListItemPrefix>
@@ -270,6 +351,9 @@ export function SideBar() {
                                     </List>
                                 </AccordionBody>
                             </Accordion>
+
+
+
                         </List>
                     </Card>
                 </Drawer>
